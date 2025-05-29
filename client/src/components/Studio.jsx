@@ -6,6 +6,7 @@ import img4 from "../assets/studio/studio (4).jpg"
 import img5 from "../assets/studio/studio (5).jpg"
 import img6 from "../assets/studio/studio (6).jpg"
 import img7 from "../assets/studio/studio (7).jpg"
+import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 
 
 const tabs = [
@@ -51,37 +52,45 @@ const Studio = () => {
     const activeTab = tabs[activeTabIndex];
 
     return (
-        <div className="container mx-auto ">
-            <div className="flex flex-col items-center gap-12 px-14 py-12">
-                {/* Heading */}
-                <div className="flex flex-col items-center gap-4 text-center">
-                    <h1 className="text-orange-400 text-2xl font-medium font-['Gellix']">The Studio</h1>
-                    <h2 className="text-zinc-800 text-5xl font-bold font-['Cambon']">Lorem ipsum molestie massa sed at nunc.</h2>
-                </div>
+        <div className="  w-full min-h-screen relative py-20">
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
+                style={{ backgroundImage: `url(${bgImage})` }}
+            ></div>
 
-                {/* Tabs layout */}
-                <div className="flex gap-10 w-full">
-                    {/* Left: Tab Titles */}
-                    <div className="w-[548px] flex flex-col">
-                        {tabs.map((tab, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setActiveTabIndex(index)}
-                                className={`w-full px-4 py-6 text-left border-b-2 cursor-pointer ${index === activeTabIndex
-                                    ? "border-zinc-800 text-zinc-800 font-bold"
-                                    : "border-stone-300 text-slate-500 font-medium"
-                                    } text-xl font-['Gellix'] transition-all duration-200`}
-                            >
-                                {tab.title}
-                            </button>
-                        ))}
+            <div className='container mx-auto '>
+
+                <div className="relative flex flex-col items-center gap-12 mx-14">
+                    {/* Heading */}
+                    <div className="flex flex-col items-center gap-4 text-center">
+                        <h1 className="text-orange-400 text-2xl font-medium font-['Gellix']">The Studio</h1>
+                        <h2 className="text-zinc-800 text-5xl font-bold font-['Cambon']">Lorem ipsum molestie massa sed at nunc.</h2>
                     </div>
 
-                    {/* Right: Tab Content */}
-                    <div className="flex-1 flex flex-col gap-4">
-                        <h3 className="text-zinc-800 text-4xl font-bold font-['Cambon']">{activeTab.title}</h3>
-                        <p className="text-zinc-800 text-xl font-normal font-['Gellix'] leading-9">{activeTab.content}</p>
-                        <img src={activeTab.image} alt={activeTab.title} className="w-full h-[360px] object-cover rounded" />
+                    {/* Tabs layout */}
+                    <div className="flex gap-10 w-full">
+                        {/* Left: Tab Titles */}
+                        <div className="w-[548px] flex flex-col">
+                            {tabs.map((tab, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setActiveTabIndex(index)}
+                                    className={`w-full px-4 py-6 text-left border-b-2 cursor-pointer ${index === activeTabIndex
+                                        ? "border-zinc-800 text-zinc-800 font-bold"
+                                        : "border-stone-300 text-slate-500 font-medium"
+                                        } text-xl font-['Gellix'] transition-all duration-200`}
+                                >
+                                    {tab.title}
+                                </button>
+                            ))}
+                        </div>
+
+                        {/* Right: Tab Content */}
+                        <div className="flex-1 flex flex-col gap-4">
+                            <h3 className="text-zinc-800 text-4xl font-bold font-['Cambon']">{activeTab.title}</h3>
+                            <p className="text-zinc-800 text-xl font-normal font-['Gellix'] leading-9">{activeTab.content}</p>
+                            <img src={activeTab.image} alt={activeTab.title} className="w-full h-[360px] object-cover rounded" />
+                        </div>
                     </div>
                 </div>
             </div>

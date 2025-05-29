@@ -14,13 +14,13 @@ const Home = () => {
     return (
         <div className="relative min-h-screen">
             {/* Background image layer */}
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 "
+            {/* <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 "
                 style={{ backgroundImage: `url(${bgImage})` }}
 
             >
 
-            </div>
+            </div> */}
 
 
             {/* Content layer */}
@@ -28,10 +28,11 @@ const Home = () => {
                 <Hero />
                 <About />
                 <Franchise />
+                <Stores />
                 <Studio />
                 <Stories />
                 <ExperienceSlider />
-                <Stores/>
+
 
 
             </div>

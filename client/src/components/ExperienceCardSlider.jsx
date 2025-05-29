@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 
 import ExperienceCard from '../components/ExperienceCard';
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
@@ -51,54 +52,60 @@ const ExperienceSlider = () => {
     const swiperRef = useRef(null);
 
     return (
-        <div className="container mx-auto ">
-            <div className='py-2 px-10 flex flex-row items-center justify-between'>
-                <div className='flex flex-col gap-2'>
-                    <h1 className="justify-start text-black text-5xl font-bold font-['Cambon'] leading-[60px]">Explore the Vivaham Experience</h1>
-                    <h2 className="self-stretch justify-start text-black text-sm font-bold font-['Gellix'] uppercase tracking-[3.20px]">Luxury, Tradition & Innovation in Every Detail</h2>
+        <div className=" py-20 relative w-full min-h-screen ">
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
+                style={{ backgroundImage: `url(${bgImage})` }}
+            ></div>
+            <div className='container mx-auto'>
+                <div className='py-2 px-10 flex flex-row items-center justify-between'>
+                    <div className='flex flex-col gap-2 text-start'>
+                        <h1 className="justify-start text-black text-5xl font-bold font-['Cambon'] leading-[60px]">Explore the Vivaham Experience</h1>
+                        <h2 className="self-stretch justify-start text-black text-xs font-bold font-['Gellix'] uppercase tracking-[3.20px]">Luxury, Tradition & Innovation in Every Detail</h2>
+                    </div>
+                    <div className='flex flex-row gap-2'>
+                        <button
+                            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                            onClick={() => swiperRef.current?.slidePrev()}
+                        >
+                            <BiLeftArrowAlt className='text-[1.5rem]' />
+                        </button>
+                        <button
+                            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                            onClick={() => swiperRef.current?.slideNext()}
+                        >
+                            <BiRightArrowAlt className='text-[1.5rem]' />
+                        </button>
+                    </div>
                 </div>
-                <div className='flex flex-row gap-2'>
-                    <button
-                        className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
-                        onClick={() => swiperRef.current?.slidePrev()}
+                <div className="py-10 ml-14">
+                    <Swiper
+                        onSwiper={(swiper) => {
+                            swiperRef.current = swiper;
+                        }}
+                        spaceBetween={20}
+                        slidesPerView={2.7}
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                        modules={[Navigation, Pagination]}
+                        pagination={{ clickable: true }}
+                        className="mySwiper"
                     >
-                        <BiLeftArrowAlt className='text-[1.5rem]' />
-                    </button>
-                    <button
-                        className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
-                        onClick={() => swiperRef.current?.slideNext()}
-                    >
-                        <BiRightArrowAlt className='text-[1.5rem]' />
-                    </button>
+                        {experienceData.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <ExperienceCard
+                                    img={item.img}
+                                    title={item.title}
+                                    subtitle={item.subtitle}
+                                    description={item.description}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
-            </div>
-            <div className="py-10 pl-14">
-                <Swiper
-                    onSwiper={(swiper) => {
-                        swiperRef.current = swiper;
-                    }}
-                    spaceBetween={20}
-                    slidesPerView={2.5}
-                    breakpoints={{
-                        640: { slidesPerView: 1 },
-                        768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                    }}
-                    modules={[Navigation, Pagination]}
-                    pagination={{ clickable: true }}
-                    className="mySwiper"
-                >
-                    {experienceData.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <ExperienceCard
-                                img={item.img}
-                                title={item.title}
-                                subtitle={item.subtitle}
-                                description={item.description}
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
             </div>
         </div>
     );

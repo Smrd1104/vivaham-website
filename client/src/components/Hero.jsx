@@ -2,14 +2,14 @@ import img from "../assets/hero/hero.jpg"
 import logo from "../assets/hero/vivaham-logo.png"
 const Hero = () => {
     return (
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-[700px]">
             {/* Background Image */}
             <img src={img} alt="Hero Background" className="w-full h-full object-cover" />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex flex-col items-center translate-y-20 px-4">
+            <div className="absolute inset-0 flex flex-col items-center translate-y-10 px-4">
                 {/* Logo */}
-                <img src={logo} alt="Vivaham Logo" className="w-[300px] md:w-[500px] lg:w-[750px]" />
+                <img src={logo} alt="Vivaham Logo" className="w-[300px] md:w-[500px] lg:w-[700px]" />
 
                 {/* Heading */}
                 <p className=" text-white text-[4rem] font-bold font-['Cambon'] ">
