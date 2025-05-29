@@ -7,6 +7,7 @@ import Studio from '../components/Studio';
 import Stories from '../components/Stories';
 import ExperienceCard from '../components/ExperienceCard';
 import ExperienceSlider from '../components/ExperienceCardSlider';
+import Stores from '../components/Stores';
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
                 <Studio />
                 <Stories />
                 <ExperienceSlider />
+                <Stores/>
 
 
             </div>

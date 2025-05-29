@@ -3,7 +3,7 @@ import stories from '../assets/stories/stories.jpg'; // Adjust path if needed
 
 const Stories = () => {
     return (
-        <div className='container mx-auto '>
+        <div className='container mx-auto  py-20 px-10'>
             <div className="relative w-full max-w-[1500px] h-[947px] overflow-hidden px-14 ">
                 {/* Background Image */}
                 <div

@@ -51,7 +51,7 @@ const ExperienceSlider = () => {
     const swiperRef = useRef(null);
 
     return (
-        <div className="container mx-auto py-20">
+        <div className="container mx-auto ">
             <div className='py-2 px-10 flex flex-row items-center justify-between'>
                 <div className='flex flex-col gap-2'>
                     <h1 className="justify-start text-black text-5xl font-bold font-['Cambon'] leading-[60px]">Explore the Vivaham Experience</h1>
