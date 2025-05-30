@@ -8,6 +8,8 @@ import Stories from '../components/Stories';
 import ExperienceCard from '../components/ExperienceCard';
 import ExperienceSlider from '../components/ExperienceCardSlider';
 import Stores from '../components/Stores';
+import Partner from '../components/Partner';
+import PartnerSection from '../components/PartnerSection';
 
 
 const Home = () => {
@@ -32,6 +34,8 @@ const Home = () => {
                 <Studio />
                 <Stories />
                 <ExperienceSlider />
+                <PartnerSection />
+
 
 
 

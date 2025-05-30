@@ -2,7 +2,8 @@ import img from "../assets/hero/hero.jpg"
 import logo from "../assets/hero/vivaham-logo.png"
 const Hero = () => {
     return (
-        <div className="relative w-full h-[700px]">
+        <div className="relative w-full h-screen">
+            <div className="absolute inset-0 bg-black/40 bg-opacity-50 z-0"></div>
             {/* Background Image */}
             <img src={img} alt="Hero Background" className="w-full h-full object-cover" />
 

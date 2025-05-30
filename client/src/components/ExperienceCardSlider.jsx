@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
+import 'swiper/css/pagination';
 
+import bgImage from '../assets/hero/bg-img.jpg'; // adjust path if needed
 import ExperienceCard from '../components/ExperienceCard';
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
@@ -20,69 +21,78 @@ const experienceData = [
         img: img1,
         title: 'The Conventions',
         subtitle: 'Where Innovation Meets Tradition',
-        description: 'Experience the present and guide the future. From here, one begins to notice the connection that tradition has with innovation.',
+        description:
+            'Experience the present and guide the future. From here, one begins to notice the connection that tradition has with innovation.',
     },
     {
         img: img2,
         title: 'Bridal Affairs',
         subtitle: 'Crafting Moments, One Bride at a time',
-        description: 'Take a leap into the extraordinary where passion fuels progress and history inspires the future.',
+        description:
+            'Take a leap into the extraordinary where passion fuels progress and history inspires the future.',
     },
     {
         img: img3,
         title: 'Events & Expo',
         subtitle: 'A Celebration Like No other',
-        description: 'Discover how we bridge imagination with execution in every moment that matters.',
+        description:
+            'Discover how we bridge imagination with execution in every moment that matters.',
     },
     {
         img: img4,
         title: 'Live Offer & Exclusive',
         subtitle: 'Indulge In Exclusive Luxury Deals',
-        description: 'Discover how we bridge imagination with execution in every moment that matters.',
+        description:
+            'Discover how we bridge imagination with execution in every moment that matters.',
     },
     {
         img: img5,
         title: 'The Vivaham Circle',
         subtitle: 'Join The Inner Circle of Elegance',
-        description: 'Discover how we bridge imagination with execution in every moment that matters.',
+        description:
+            'Discover how we bridge imagination with execution in every moment that matters.',
     },
 ];
 
 const ExperienceSlider = () => {
-    const swiperRef = useRef(null);
+    const [swiperRef, setSwiperRef] = useState(null); // ✅ useState instead of useRef
 
     return (
-        <div className=" py-20 relative w-full min-h-screen ">
+        <div className="py-20 relative w-full min-h-[700px]">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
-            <div className='container mx-auto'>
-                <div className='py-2 px-10 flex flex-row items-center justify-between'>
-                    <div className='flex flex-col gap-2 text-start'>
-                        <h1 className="justify-start text-black text-5xl font-bold font-['Cambon'] leading-[60px]">Explore the Vivaham Experience</h1>
-                        <h2 className="self-stretch justify-start text-black text-xs font-bold font-['Gellix'] uppercase tracking-[3.20px]">Luxury, Tradition & Innovation in Every Detail</h2>
+
+            <div className="container mx-auto relative z-10">
+                <div className="py-2 px-10 flex flex-row items-center justify-between">
+                    <div className="flex flex-col gap-2 text-start">
+                        <h1 className="text-black text-5xl font-bold font-['Cambon'] leading-[60px]">
+                            Explore the Vivaham Experience
+                        </h1>
+                        <h2 className="text-black text-xs font-bold font-['Gellix'] uppercase tracking-[3.20px]">
+                            Luxury, Tradition & Innovation in Every Detail
+                        </h2>
                     </div>
-                    <div className='flex flex-row gap-2'>
+                    <div className="flex flex-row gap-2">
                         <button
                             className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
-                            onClick={() => swiperRef.current?.slidePrev()}
+                            onClick={() => swiperRef?.slidePrev()}
                         >
-                            <BiLeftArrowAlt className='text-[1.5rem]' />
+                            <BiLeftArrowAlt className="text-[1.5rem]" />
                         </button>
                         <button
                             className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
-                            onClick={() => swiperRef.current?.slideNext()}
+                            onClick={() => swiperRef?.slideNext()}
                         >
-                            <BiRightArrowAlt className='text-[1.5rem]' />
+                            <BiRightArrowAlt className="text-[1.5rem]" />
                         </button>
                     </div>
                 </div>
-                <div className="py-10 ml-14">
+
+                <div className="py-10 ml-14 pr-10">
                     <Swiper
-                        onSwiper={(swiper) => {
-                            swiperRef.current = swiper;
-                        }}
+                        onSwiper={setSwiperRef} // ✅ assign swiper instance here
                         spaceBetween={20}
                         slidesPerView={2.7}
                         breakpoints={{
@@ -91,7 +101,6 @@ const ExperienceSlider = () => {
                             1024: { slidesPerView: 3 },
                         }}
                         modules={[Navigation, Pagination]}
-                        pagination={{ clickable: true }}
                         className="mySwiper"
                     >
                         {experienceData.map((item, index) => (

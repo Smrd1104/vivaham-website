@@ -52,7 +52,7 @@ const Studio = () => {
     const activeTab = tabs[activeTabIndex];
 
     return (
-        <div className="  w-full min-h-screen relative py-20">
+        <div className="  w-full min-h-[700px] relative py-20">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}

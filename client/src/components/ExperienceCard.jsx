@@ -19,7 +19,7 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
                     </h1>
 
                     {/* Subtitle */}
-                    <h2 className="text-black text-3xl font-bold font-['Cambon'] leading-tight">
+                    <h2 className="text-black text-4xl font-bold font-['Cambon'] leading-tight">
                         {subtitle}
                     </h2>
 
@@ -28,7 +28,7 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
                         max-h-0 overflow-hidden transition-all duration-500 ease-in-out 
                         group-hover:max-h-[500px]
                     ">
-                        <p className="text-black text-md font-medium font-['Gellix'] leading-relaxed mt-2">
+                        <p className="text-black text-lg font-medium font-['Gellix'] leading-relaxed mt-2">
                             {description}
                         </p>
                     </div>

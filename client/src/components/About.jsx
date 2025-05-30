@@ -3,7 +3,7 @@ import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 
 const About = () => {
     return (
-        <div className="relative min-h-screen  w-full px-4  overflow-hidden">
+        <div className="relative min-h-[700px]  w-full px-4  overflow-hidden">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"

@@ -4,7 +4,7 @@ import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 
 const Franchise = () => {
     return (
-        <div className="relative w-full min-h-screen">
+        <div className="relative w-full min-h-[700px]">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
@@ -12,7 +12,7 @@ const Franchise = () => {
             ></div>
             <div className="container mx-auto">
                 <div className=" relative self-stretch inline-flex justify-start items-center gap-10  px-14 ">
-                    <img className="flex-1  " src={img} width={670} />
+                    <img className="flex-1 w-[600px] h-[850px] " src={img} />
                     <div className="w-[840px] inline-flex flex-col justify-center items-start gap-8">
                         <div className="self-stretch flex flex-col justify-start items-start gap-4">
                             <h1 className="justify-start text-orange-400 text-2xl font-medium font-['Gellix']">The Franchise</h1>
