@@ -11,7 +11,6 @@ import Stores from '../components/Stores';
 import Partner from '../components/Partner';
 import PartnerSection from '../components/PartnerSection';
 
-
 const Home = () => {
     return (
         <div className="relative min-h-screen">
@@ -35,10 +34,6 @@ const Home = () => {
                 <Stories />
                 <ExperienceSlider />
                 <PartnerSection />
-
-
-
-
             </div>
 
         </div>

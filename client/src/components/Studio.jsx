@@ -75,13 +75,18 @@ const Studio = () => {
                                 <button
                                     key={index}
                                     onClick={() => setActiveTabIndex(index)}
-                                    className={`w-full px-4 py-6 text-left border-b-2 cursor-pointer ${index === activeTabIndex
-                                        ? "border-zinc-800 text-zinc-800 font-bold"
-                                        : "border-stone-300 text-slate-500 font-medium"
-                                        } text-xl font-['Gellix'] transition-all duration-200`}
+                                    className={`w-full px-4 py-6 text-left cursor-pointer text-xl font-['Gellix'] transition-all duration-200 relative
+        ${index === activeTabIndex
+                                            ? "text-zinc-800 font-bold"
+                                            : "text-slate-500 font-medium"
+                                        }`}
                                 >
                                     {tab.title}
+                                    {index === activeTabIndex && (
+                                        <div className="absolute bottom-0 left-4 h-[3px] w-[400px] bg-zinc-800"></div>
+                                    )}
                                 </button>
+
                             ))}
                         </div>
 
