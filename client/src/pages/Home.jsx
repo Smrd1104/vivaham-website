@@ -10,6 +10,7 @@ import ExperienceSlider from '../components/ExperienceCardSlider';
 import Stores from '../components/Stores';
 import Partner from '../components/Partner';
 import PartnerSection from '../components/PartnerSection';
+import Journey from '../components/Journey';
 
 const Home = () => {
     return (
@@ -33,6 +34,8 @@ const Home = () => {
                 <Studio />
                 <Stories />
                 <ExperienceSlider />
+                <PartnerSection />
+                <Journey />
                 <PartnerSection />
             </div>
 

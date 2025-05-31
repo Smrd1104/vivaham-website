@@ -28,7 +28,7 @@ const PartnerSection = () => {
     ];
 
     return (
-        <div className="relative w-full">
+        <div className="relative w-full ">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
