@@ -94,7 +94,7 @@ const ExperienceSlider = () => {
                     <Swiper
                         onSwiper={setSwiperRef} // ✅ assign swiper instance here
                         spaceBetween={20}
-                        slidesPerView={2.7}
+                        slidesPerView={2.5}
                         breakpoints={{
                             640: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },

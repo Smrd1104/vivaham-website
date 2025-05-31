@@ -33,10 +33,11 @@ const Home = () => {
                 <Stores />
                 <Studio />
                 <Stories />
-                <ExperienceSlider />
-                <PartnerSection />
                 <Journey />
                 <PartnerSection />
+                <ExperienceSlider />
+
+
             </div>
 
         </div>

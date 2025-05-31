@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperienceCard = ({ img, title, subtitle, description }) => {
     return (
-        <div className="relative overflow-hidden group ">
+        <div className="relative overflow-hidden group w-full">
             {/* Image */}
             <img
                 src={img}

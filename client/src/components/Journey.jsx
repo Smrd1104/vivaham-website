@@ -52,33 +52,35 @@ const Journey = () => {
     ];
 
     return (
-        <div className="relative bg-stone-100 overflow-hidden pb-[900px] ">
-            {/* Fixed Heading */}
-            <div
-                ref={headingRef}
-                className="w-full h-screen flex justify-center items-center z-0"
-            >
-                <h1 className="text-center text-black text-5xl font-bold font-['Cambon'] max-w-4xl">
-                    A visual journey through the luxury, culture, and charm of Vivaham.
-                </h1>
-            </div>
+        <div className='  bg-stone-100'>
+            <div className="relative container mx-auto  overflow-hidden pb-[900px] ">
+                {/* Fixed Heading */}
+                <div
+                    ref={headingRef}
+                    className="w-full h-screen flex justify-center items-center z-0"
+                >
+                    <h1 className="text-center text-black text-5xl font-bold font-['Cambon'] max-w-4xl">
+                        A visual journey through the luxury, culture, and charm of Vivaham.
+                    </h1>
+                </div>
 
-            {/* Scrollable Images */}
-            <div className="relative z-0 -mt-screen flex flex-col items-center gap-10 px-10 py-20">
-                {images.map((image, i) => (
-                    <div
-                        key={i}
-                        className={`w-fit journey-image ${i % 2 === 0 ? "self-start" : "self-end"}`}
-                    >
-                        <img
-                            src={typeof image.src === "string" ? image.src : image.src.src}
-                            width={image.width}
-                            height={image.height}
-                            alt={`journey-${i}`}
-                            className="rounded-xl shadow-xl"
-                        />
-                    </div>
-                ))}
+                {/* Scrollable Images */}
+                <div className="relative z-0 -mt-screen flex flex-col items-center gap-10 px-10 py-20">
+                    {images.map((image, i) => (
+                        <div
+                            key={i}
+                            className={`w-fit journey-image ${i % 2 === 0 ? "self-start" : "self-end"}`}
+                        >
+                            <img
+                                src={typeof image.src === "string" ? image.src : image.src.src}
+                                width={image.width}
+                                height={image.height}
+                                alt={`journey-${i}`}
+                                className="rounded-xl shadow-xl"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
