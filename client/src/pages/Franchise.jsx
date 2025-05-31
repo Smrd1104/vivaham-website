@@ -4,7 +4,7 @@ import Flipbook from '../components/Flipbook'
 const Franchise = () => {
     return (
         <div>
-            <Flipbook />
+            Franchise
         </div>
     )
 }

@@ -35,9 +35,10 @@ const Home = () => {
                 <Studio />
                 <Stories />
                 <Journey />
+                <Media />
                 <PartnerSection />
                 <ExperienceSlider />
-                <Media />
+                
 
 
             </div>
