@@ -70,7 +70,7 @@ const ExperienceSlider = () => {
                         <h1 className="text-black text-5xl font-bold font-['Cambon'] leading-[60px]">
                             Explore the Vivaham Experience
                         </h1>
-                        <h2 className="text-black text-xs font-bold font-['Gellix'] uppercase tracking-[3.20px]">
+                        <h2 className="text-black text-xs font-semibold font-['Gellix'] uppercase tracking-[3.20px]">
                             Luxury, Tradition & Innovation in Every Detail
                         </h2>
                     </div>
@@ -90,15 +90,15 @@ const ExperienceSlider = () => {
                     </div>
                 </div>
 
-                <div className="py-10 ml-14 pr-10">
+                <div className="py-10 pl-10">
                     <Swiper
                         onSwiper={setSwiperRef} // ✅ assign swiper instance here
-                        spaceBetween={20}
+                        spaceBetween={15}
                         slidesPerView={2.5}
                         breakpoints={{
                             640: { slidesPerView: 1 },
                             768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
+                            1024: { slidesPerView: 2.5 },
                         }}
                         modules={[Navigation, Pagination]}
                         className="mySwiper"

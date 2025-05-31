@@ -7,19 +7,19 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
             <img
                 src={img}
                 alt="Experience"
-                className="w-full h-[501px] object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-[550px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-95 p-4">
                 <div className="flex flex-col gap-4 cursor-pointer">
                     {/* Title */}
-                    <h1 className="text-orange-400 text-xl   font-medium font-['Gellix']">
+                    <h1 className="text-orange-400 text-[1.2rem]   font-medium font-['Gellix']">
                         {title}
                     </h1>
 
                     {/* Subtitle */}
-                    <h2 className="text-black text-4xl font-bold font-['Cambon'] leading-tight">
+                    <h2 className="text-black text-[1.5rem] font-bold font-['Cambon'] leading-tight">
                         {subtitle}
                     </h2>
 

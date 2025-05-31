@@ -83,7 +83,7 @@ const Studio = () => {
                                 >
                                     {tab.title}
                                     {index === activeTabIndex && (
-                                        <div className="absolute bottom-0 left-4 h-[3px] w-[400px] bg-zinc-800"></div>
+                                        <div className="absolute bottom-0 left-4 h-[1px] w-[400px] bg-zinc-800"></div>
                                     )}
                                 </button>
 

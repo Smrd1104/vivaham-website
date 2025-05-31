@@ -11,6 +11,7 @@ import Stores from '../components/Stores';
 import Partner from '../components/Partner';
 import PartnerSection from '../components/PartnerSection';
 import Journey from '../components/Journey';
+import Media from '../components/Media';
 
 const Home = () => {
     return (
@@ -36,6 +37,7 @@ const Home = () => {
                 <Journey />
                 <PartnerSection />
                 <ExperienceSlider />
+                <Media />
 
 
             </div>
