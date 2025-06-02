@@ -25,7 +25,7 @@ const Stories = () => {
                                 A Curated Universe of Bridal Luxury.
                             </div>
                         </div>
-                        <p className="mt-6 text-black md:text-md text-xs md:text-start text-center font-medium font-['Gellix'] md:leading-9">
+                        <p className="mt-6 text-black md:text-[1rem] text-xs md:text-start text-center font-medium font-['Gellix'] md:leading-9">
                             Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail spaces—they’re experiences. Every piece tells a story, every visit creates a memory.
                         </p>
                     </div>
