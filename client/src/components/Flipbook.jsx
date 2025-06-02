@@ -23,13 +23,13 @@ const Flipbook = ({ urls = [], currentIndex = 0, onClose, onNavigate }) => {
         >
             <div
                 ref={modalRef}
-                className="relative w-full max-w-6xl h-[600px] bg-white rounded shadow-lg flex flex-col "
+                className="relative w-full lg:max-w-6xl sm:max-w-3xl md:max-w-2xl  md:h-[600px] h-[300px] bg-white rounded shadow-lg flex flex-col lg:p-1 md:p-10 p-12 "
             >
                 <button
                     onClick={onClose}
                     className="absolute top-2 right-2 border-2 bg-white text-xl font-bold text-gray-700 hover:text-gray-900 z-10"
                 >
-                    <IoClose className='text-3xl' />
+                    <IoClose className='md:text-3xl' />
                 </button>
 
                 <iframe
@@ -49,7 +49,7 @@ const Flipbook = ({ urls = [], currentIndex = 0, onClose, onNavigate }) => {
                             className="p-2 border-2 border-gray-500 bg-white rounded shadow hover:bg-gray-200"
                             aria-label="Previous Flipbook"
                         >
-                            <BiLeftArrowAlt className='text-4xl' />
+                            <BiLeftArrowAlt className='md:text-4xl' />
                         </button>
                     </div>
                 )}
@@ -61,7 +61,7 @@ const Flipbook = ({ urls = [], currentIndex = 0, onClose, onNavigate }) => {
                             className="p-2 border-2 border-gray-500 bg-white rounded shadow hover:bg-gray-200"
                             aria-label="Next Flipbook"
                         >
-                            <BiRightArrowAlt className='text-4xl' />
+                            <BiRightArrowAlt className='md:text-4xl' />
                         </button>
                     </div>
                 )}
