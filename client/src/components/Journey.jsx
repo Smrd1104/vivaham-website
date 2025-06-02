@@ -5,14 +5,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Local images
 import img1 from "../assets/journey/journey (1).png";
-import img2 from "../assets/journey/journey (2).png";
-import img3 from "../assets/journey/journey (3).png";
-import img4 from "../assets/journey/journey (4).png";
-import img5 from "../assets/journey/journey (5).png";
-import img6 from "../assets/journey/journey (6).png";
-import img7 from "../assets/journey/journey (7).png";
-import img8 from "../assets/journey/journey (8).png";
-import img9 from "../assets/journey/journey (9).png";
+import img2 from "../assets/journey/journey (9).png";
+import img3 from "../assets/journey/journey (8).png";
+import img4 from "../assets/journey/journey (7).png";
+import img5 from "../assets/journey/journey (6).png";
+import img6 from "../assets/journey/journey (5).png";
+import img7 from "../assets/journey/journey (4).png";
+import img8 from "../assets/journey/journey (3).png";
+import img9 from "../assets/journey/journey (2).png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +66,7 @@ const Journey = () => {
                             <img
                                 src={typeof img === "string" ? img : img.src}
                                 alt={`journey-${i}`}
-                                className="rounded-xl shadow-xl
+                                className="rounded shadow-xl
                   w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%]
                   h-auto transition-all duration-300"
                             />

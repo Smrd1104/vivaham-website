@@ -65,16 +65,16 @@ const ExperienceSlider = () => {
             ></div>
 
             <div className="container mx-auto relative z-10">
-                <div className="py-2 px-10 flex flex-row items-center justify-between">
+                <div className="py-2 md:px-10 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
                     <div className="flex flex-col gap-2 text-start">
-                        <h1 className="text-black text-5xl font-bold font-['Cambon'] leading-[60px]">
+                        <h1 className="text-black md:text-5xl text-3xl font-bold font-['Cambon'] md:leading-[60px]">
                             Explore the Vivaham Experience
                         </h1>
-                        <h2 className="text-black text-xs font-semibold font-['Gellix'] uppercase tracking-[3.20px]">
+                        <h2 className="text-black text-xs  font-semibold font-['Gellix'] uppercase md:tracking-[3.20px]">
                             Luxury, Tradition & Innovation in Every Detail
                         </h2>
                     </div>
-                    <div className="flex flex-row gap-2">
+                    <div className="flex flex-row gap-2 md:justify-end justify-between">
                         <button
                             className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
                             onClick={() => swiperRef?.slidePrev()}
@@ -90,19 +90,29 @@ const ExperienceSlider = () => {
                     </div>
                 </div>
 
-                <div className="py-10 pl-10">
+                <div className="py-10 md:pl-10 md:px-0 px-5">
                     <Swiper
-                        onSwiper={setSwiperRef} // ✅ assign swiper instance here
+                        onSwiper={setSwiperRef}
                         spaceBetween={15}
-                        slidesPerView={2.5}
+                        slidesPerView={1} // default (mobile)
                         breakpoints={{
-                            640: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 2.5 },
+                            // Mobile screens (up to 639px)
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            // Tablets (640px to 1023px)
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            // Desktops (1024px and above)
+                            1024: {
+                                slidesPerView: 2.5,
+                            },
                         }}
                         modules={[Navigation, Pagination]}
                         className="mySwiper"
                     >
+
                         {experienceData.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <ExperienceCard
@@ -116,7 +126,7 @@ const ExperienceSlider = () => {
                     </Swiper>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -36,14 +36,14 @@ const PartnerSection = () => {
             ></div>
 
             <div className='container mx-auto'>
-                <h1 className="text-center text-black text-5xl font-bold font-['Cambon'] leading-[60px]">
+                <h1 className="text-center text-black md:text-5xl text-3xl font-bold font-['Cambon'] leading-[60px]">
                     Partner with Vivaham
                 </h1>
-                <p className="text-center text-black text-sm font-bold font-['Gellix'] uppercase tracking-[3.20px]">
+                <p className="text-center text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
                     Embrace the Fusion of Timeless Indian Heritage and Contemporary Style
                 </p>
 
-                <div className="flex flex-row justify-between gap-5 overflow-hidden px-14">
+                <div className="flex md:flex-row flex-col justify-between gap-5 overflow-hidden md:px-14 px-5">
                     {partnerData.map((item, index) => (
                         <Partner
                             key={index}
