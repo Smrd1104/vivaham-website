@@ -14,7 +14,7 @@ const mediaData = [
         flipbookUrls: [
             'https://heyzine.com/flip-book/fbe67d5f2c.html',
             'https://heyzine.com/flip-book/0696d2cdd6.html',
-            'https://heyzine.com/flip-book/another-flipbook.html',
+
         ],
     },
     {
@@ -24,7 +24,7 @@ const mediaData = [
         flipbookUrls: [
             'https://heyzine.com/flip-book/fbe67d5f2c.html',
             'https://heyzine.com/flip-book/0696d2cdd6.html',
-            'https://heyzine.com/flip-book/another-flipbook.html',
+
         ],
     },
     {
@@ -34,7 +34,7 @@ const mediaData = [
         flipbookUrls: [
             'https://heyzine.com/flip-book/fbe67d5f2c.html',
             'https://heyzine.com/flip-book/0696d2cdd6.html',
-            'https://heyzine.com/flip-book/another-flipbook.html',
+
         ],
     },
 ];
@@ -43,9 +43,9 @@ const Media = () => {
     const [currentUrls, setCurrentUrls] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const handlePreview = (urls, index = 0) => {
+    const handlePreview = (urls) => {
         setCurrentUrls(urls);
-        setCurrentIndex(index);
+        setCurrentIndex(0); // Always start from first URL
     };
 
     const handleClose = () => {
@@ -80,13 +80,8 @@ const Media = () => {
                         image={item.image}
                         title={item.title}
                         description={item.description}
-                        flipbookUrls={item.flipbookUrls}
-                        onPreview={(url) => {
-                            const idx = item.flipbookUrls.indexOf(url);
-                            handlePreview(item.flipbookUrls, idx);
-                        }}
+                        onPreview={() => handlePreview(item.flipbookUrls)} // Always start from index 0
                     />
-
                 ))}
 
                 {/* Show Flipbook modal */}

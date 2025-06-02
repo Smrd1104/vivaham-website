@@ -1,4 +1,3 @@
-// MediaCard.jsx
 import React from 'react';
 
 const MediaCard = ({ image, title, description, onPreview }) => {

@@ -60,22 +60,22 @@ const Studio = () => {
 
             <div className='container mx-auto '>
 
-                <div className="relative flex flex-col items-center gap-12 mx-14">
+                <div className="relative flex flex-col items-center md:gap-12 gap-5 md:mx-14">
                     {/* Heading */}
                     <div className="flex flex-col items-center gap-4 text-center">
                         <h1 className="text-orange-400 text-2xl font-medium font-['Gellix']">The Studio</h1>
-                        <h2 className="text-zinc-800 text-5xl font-bold font-['Cambon']">Lorem ipsum molestie massa sed at nunc.</h2>
+                        <h2 className="text-zinc-800 md:text-5xl text-3xl font-bold font-['Cambon']">Lorem ipsum molestie massa sed at nunc.</h2>
                     </div>
 
                     {/* Tabs layout */}
-                    <div className="flex gap-10 w-full">
+                    <div className="flex md:flex-row flex-col md:gap-10 gap-8 w-full">
                         {/* Left: Tab Titles */}
-                        <div className="w-[548px] flex flex-col">
+                        <div className="md:w-[548px] flex flex-col md:px-0 px-4">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setActiveTabIndex(index)}
-                                    className={`w-full px-4 py-6 text-left cursor-pointer text-xl font-['Gellix'] transition-all duration-200 relative
+                                    className={` md:px-4 px-5 py-6 text-left border-b-2 md:w-[400px] w-[370px]    cursor-pointer md:text-xl font-['Gellix'] transition-all duration-200 relative
         ${index === activeTabIndex
                                             ? "text-zinc-800 font-bold"
                                             : "text-slate-500 font-medium"
@@ -83,7 +83,7 @@ const Studio = () => {
                                 >
                                     {tab.title}
                                     {index === activeTabIndex && (
-                                        <div className="absolute bottom-0 left-4 h-[1px] w-[400px] bg-zinc-800"></div>
+                                        <div className="absolute bottom-0 md:left-0 left-0 h-[1px] md:w-[400px] w-[370px] bg-zinc-800"></div>
                                     )}
                                 </button>
 
@@ -91,9 +91,9 @@ const Studio = () => {
                         </div>
 
                         {/* Right: Tab Content */}
-                        <div className="flex-1 flex flex-col gap-4">
-                            <h3 className="text-zinc-800 text-4xl font-bold font-['Cambon']">{activeTab.title}</h3>
-                            <p className="text-zinc-800 text-xl font-normal font-['Gellix'] leading-9">{activeTab.content}</p>
+                        <div className="flex-1 flex flex-col gap-4 md:mx-0 mx-5">
+                            <h3 className="text-zinc-800 md:text-4xl text-3xl font-bold font-['Cambon']">{activeTab.title}</h3>
+                            <p className="text-zinc-800 md:text-xl text-md font-normal font-['Gellix'] leading-9">{activeTab.content}</p>
                             <img src={activeTab.image} alt={activeTab.title} className="w-full h-[360px] object-cover rounded" />
                         </div>
                     </div>

@@ -27,20 +27,20 @@ const reverseLogos = [revImg1, revImg2, revImg3, revImg4, revImg5, revImg6, revI
 
 const Stores = () => {
     return (
-        <div className="bg-black mt-40 ">
+        <div className="bg-black md:mt-40 mt-10 ">
             <div className="relative  text-center  overflow-hidden container mx-auto ">
                 {/* Background Overlay */}
                 <div className="absolute inset-0 bg-black/70 bg-opacity-50 z-10"></div>
 
                 {/* Content */}
-                <div className="relative z-20  translate-y-64 ">
+                <div className="relative z-20  md:translate-y-64 translate-y-52 md:mt-0 -mt-5 ">
                     <h2 className="justify-start text-orange-400 text-2xl font-medium font-['Gellix']">The Stores</h2>
-                    <p className="self-stretch text-center justify-start text-white text-5xl font-bold font-['Cambon'] leading-[60px] mb-4">A Curated Universe of Bridal Luxury
+                    <p className="self-stretch text-center justify-start text-white md:text-5xl text-4xl font-bold font-['Cambon'] md:leading-[60px] mb-4">A Curated Universe of Bridal Luxury
                     </p>
-                    <h2 className="self-stretch text-center justify-start text-white text-base font-bold font-['Gellix'] uppercase tracking-[3.20px] mb-4">A Curated Universe of Bridal Luxury.</h2>
-                    <p className="self-stretch text-center justify-start text-white text-xl font-medium font-['Gellix'] leading-9">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
-                        <br />handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail
-                        <br />spaces—they’re experiences. Every piece tells a story, every visit creates a memory</p>
+                    <h2 className="self-stretch md:text-center justify-start text-white md:text-base text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px] mb-4">A Curated Universe of Bridal Luxury.</h2>
+                    <p className="self-stretch md:text-center text-justify md:justify-start text-white md:text-xl text-md font-medium font-['Gellix'] md:leading-9 leading-5 md:mx-40 mx-6">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
+                        handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail
+                        spaces—they’re experiences. Every piece tells a story, every visit creates a memory</p>
                 </div>
 
                 {/* Marquee Wrapper */}
@@ -51,7 +51,7 @@ const Stores = () => {
                                 key={index}
                                 src={img}
                                 alt="brand"
-                                className="w-[350px] object-contain mx-2"
+                                className="md:w-[350px] w-[250px] object-contain mx-2"
                             />
                         ))}
                     </div>
@@ -65,7 +65,7 @@ const Stores = () => {
                                 key={`bottom-${index}`}
                                 src={img}
                                 alt="brand"
-                                className="w-[350px] object-contain mx-2"
+                                className="md:w-[350px] w-[250px] object-contain mx-2"
                             />
                         ))}
                     </div>
