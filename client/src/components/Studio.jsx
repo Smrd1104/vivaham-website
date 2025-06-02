@@ -75,7 +75,7 @@ const Studio = () => {
                                 <button
                                     key={index}
                                     onClick={() => setActiveTabIndex(index)}
-                                    className={` md:px-4 px-5 py-6 text-left border-b-2 md:w-[400px] w-[370px]    cursor-pointer md:text-xl font-['Gellix'] transition-all duration-200 relative
+                                    className={` md:px-4 px-5 py-6 text-left border-b md:w-[400px] w-[370px]    cursor-pointer md:text-lg font-['Gellix'] transition-all duration-200 relative
         ${index === activeTabIndex
                                             ? "text-zinc-800 font-bold"
                                             : "text-slate-500 font-medium"

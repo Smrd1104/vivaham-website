@@ -4,16 +4,16 @@ import React from 'react';
 const Partner = ({ title, heading, subheading, description, image }) => {
     return (
         <div className="mx-auto container my-16 ">
-           
-            <div className="relative">
+
+            <div className="relative ">
                 {/* Background Image */}
                 <div
-                    className="absolute inset-0 bg-no-repeat bg-cover bg-center   "
+                    className="absolute inset-0 bg-no-repeat bg-cover bg-center z-0  "
                     style={{ backgroundImage: `url(${image})` }}
                 ></div>
 
                 {/* Foreground Content */}
-                <div className="container mx-auto relative">
+                <div className="container mx-auto relative z-0">
                     <div className="relative z-10 h-[600px] p-5 ">
                         <div className="absolute  bottom-10  p-10  bg-stone-100 bg-opacity-95 shadow-lg">
                             <div className="flex flex-col gap-4">

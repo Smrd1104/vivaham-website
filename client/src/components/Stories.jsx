@@ -7,18 +7,18 @@ const Stories = () => {
         <div className='  relative md:mx-14 mx-5 '>
             {/* Background Image */}
             <div
-                className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+                className="absolute inset-0 bg-no-repeat bg-cover bg-center "
                 style={{ backgroundImage: `url(${stories})` }}
             ></div>
             <div className="  container mx-auto  relative w-full   min-h-screen md:max-w-[1580px] h-[650px] overflow-hidden px-10  ">
 
 
                 {/* Foreground Content */}
-                <div className="relative z-10 h-full  md:-right-20 ">
-                    <div className="absolute right-0 md:p-14 md:top-1/2 top-1/6 md:-translate-y-1/2 translate-y-80 bg-stone-100 bg-opacity-95 max-w-[550px]  p-5 py-10 shadow-lg">
+                <div className="relative z-10  h-full  md:-right-20 ">
+                    <div className="absolute   md:right-0 md:p-12    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/6  shadow-lg">
                         <div className="flex flex-col gap-4 ">
                             <div className="text-orange-400 md:text-xl text-md md:text-start text-center font-medium font-['Gellix']">The Stories</div>
-                            <h2 className="text-black md:text-4xl text-2xl md:text-start text-center font-bold font-['Cambon'] md:leading-[48px]">
+                            <h2 className="text-black md:text-4xl text-2xl md:text-start text-center font-bold font-['Cambon'] md:leading-[48px] leading-[24px]">
                                 A Curated Universe of <br />Bridal Luxury
                             </h2>
                             <div className="text-black md:text-sm md:text-start text-center text-xs font-bold font-['Gellix'] uppercase tracking-[3.20px]">
