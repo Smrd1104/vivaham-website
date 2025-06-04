@@ -70,7 +70,7 @@ const Studio = () => {
                     {/* Tabs layout */}
                     <div className="flex md:flex-row flex-col md:gap-10 gap-8 w-full">
                         {/* Left: Tab Titles */}
-                        <div className="md:w-[548px] flex flex-col md:px-0 px-4">
+                        <div className="flex flex-col md:px-0 px-4">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}
@@ -91,10 +91,10 @@ const Studio = () => {
                         </div>
 
                         {/* Right: Tab Content */}
-                        <div className="flex-1 flex flex-col gap-4 md:mx-0 mx-5">
+                        <div className="flex-1 flex flex-col gap-4 md:mx-0 mx-5 ">
                             <h3 className="text-zinc-800 md:text-4xl text-3xl font-bold font-['Cambon']">{activeTab.title}</h3>
                             <p className="text-zinc-800 md:text-xl text-md font-normal font-['Gellix'] leading-9">{activeTab.content}</p>
-                            <img src={activeTab.image} alt={activeTab.title} className="w-full h-[360px] object-cover rounded" />
+                            <img src={activeTab.image} alt={activeTab.title} className="w-full h-[395px] object-cover rounded" />
                         </div>
                     </div>
                 </div>
