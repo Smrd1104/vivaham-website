@@ -64,7 +64,7 @@ const ExperienceSlider = () => {
                 style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
 
-            <div className="container mx-auto relative md:z-0 lg:z-10 z-0">
+            <div className="container mx-auto relative md:z-0 lg:z-0 z-0">
                 <div className="py-2 md:px-10 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
                     <div className="flex flex-col gap-2 text-start">
                         <h1 className="text-black md:text-5xl text-3xl font-bold font-['Cambon'] md:leading-[60px]">

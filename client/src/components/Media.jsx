@@ -12,8 +12,8 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/fbe67d5f2c.html',
-            'https://heyzine.com/flip-book/0696d2cdd6.html',
+            'https://heyzine.com/flip-book/c546d9effe.html',
+
 
         ],
     },
@@ -22,8 +22,7 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/fbe67d5f2c.html',
-            'https://heyzine.com/flip-book/0696d2cdd6.html',
+            'https://heyzine.com/flip-book/c546d9effe.html',
 
         ],
     },
@@ -32,8 +31,8 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/fbe67d5f2c.html',
-            'https://heyzine.com/flip-book/0696d2cdd6.html',
+            'https://heyzine.com/flip-book/c546d9effe.html',
+
 
         ],
     },
