@@ -13,12 +13,12 @@ const Hero = () => {
                 <img src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px]" />
 
                 {/* Heading */}
-                <p className=" text-white md:text-[4rem] text-[2.2rem] font-bold font-['Cambon'] ">
+                <p className=" text-white  font-cambon-hero ">
                     Vivaham Luxury Expo
                 </p>
 
                 {/* Subheading */}
-                <p className="text-center justify-start text-white md:text-[1.2rem] text[0.5rem] font-semibold font-['Gellix']">
+                <p className="text-center justify-start font-cambon-hero-content">
                     Your Gateway to Remarkable Indian Weddings & Beyond
                 </p>
             </div>

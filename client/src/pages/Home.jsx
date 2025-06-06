@@ -12,6 +12,7 @@ import Partner from '../components/Partner';
 import PartnerSection from '../components/PartnerSection';
 import Journey from '../components/Journey';
 import Media from '../components/Media';
+import GiftBox from '../components/GiftBox';
 
 const Home = () => {
     return (
@@ -38,7 +39,8 @@ const Home = () => {
                 <Media />
                 <PartnerSection />
                 <ExperienceSlider />
-                
+                <GiftBox />
+
 
 
             </div>

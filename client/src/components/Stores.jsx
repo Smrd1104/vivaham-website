@@ -33,12 +33,12 @@ const Stores = () => {
                 <div className="absolute inset-0 bg-black/70 bg-opacity-50 z-10"></div>
 
                 {/* Content */}
-                <div className="relative z-20  md:translate-y-64 translate-y-52 md:mt-0 -mt-5 ">
-                    <h2 className="justify-start text-orange-400 text-2xl font-medium font-['Gellix']">The Stores</h2>
-                    <p className="self-stretch text-center justify-start text-white md:text-5xl text-4xl font-bold font-['Cambon'] md:leading-[60px] mb-4">A Curated Universe of Bridal Luxury
+                <div className="relative z-20  md:translate-y-72 translate-y-52 md:-mt-7 -mt-16 ">
+                    <h2 className="justify-start font-gellix-header">The Stores</h2>
+                    <p className="self-stretch text-center justify-start font-cambon-header-white-header mb-4">A Curated Universe of Bridal Luxury
                     </p>
-                    <h2 className="self-stretch md:text-center justify-start text-white md:text-base text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px] mb-4">A Curated Universe of Bridal Luxury.</h2>
-                    <p className="self-stretch md:text-center text-justify md:justify-start text-white md:text-xl text-md font-medium font-['Gellix'] md:leading-9 leading-5 md:mx-40 mx-6">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
+                    <h2 className="self-stretch md:text-center justify-start font-gellix-title-content-h1 mb-4">A Curated Universe of Bridal Luxury.</h2>
+                    <p className="self-stretch md:text-center text-justify md:justify-start font-gellix-content-white  md:mx-68 mx-14">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
                         handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail
                         spaces—they’re experiences. Every piece tells a story, every visit creates a memory</p>
                 </div>

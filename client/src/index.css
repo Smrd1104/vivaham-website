@@ -33,3 +33,276 @@
     /* Ultra-smooth */
     width: max-content;
 }
+
+/* Gellix Regular */
+@font-face {
+    src: url('./assets/fonts/gellix/GellixBlack.otf') format('woff2');
+    color: #2A2A2A;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 180% */
+}
+
+@font-face {
+    src: url('./assets/fonts/gellix/GellixBlack.otf') format('woff2');
+    color: #000;
+    font-family: Gellix;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    /* 180% */
+}
+
+@font-face {
+    src: url('./assets/fonts/gellix/GellixSemiBold.otf') format('opentype');
+    color: #F6A634;
+    font-family: Gellix;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+    /* 180% */
+}
+
+/* Canon Bold */
+@font-face {
+    src: url('./assets/fonts/CAMBON/Cambon-Black.eot') format('woff2');
+    color: #2A2A2A;
+    font-family: Cambon;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+
+.font-cambon-header {
+    color: #2A2A2A;
+    font-family: Cambon;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.font-cambon-header-white {
+    color: #FFF;
+    text-align: center;
+    font-family: Cambon;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-white {
+        font-size: 72px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-white {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+
+.font-gellix-header {
+    color: #F6A634;
+    font-family: Gellix;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.font-gellix-content {
+    color: #2A2A2A;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.font-gellix-content-white {
+    color: #FFF;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    /* 180% */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-content-white {
+        font-size: 72px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-content-white {
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+
+.font-cambon-header-white-header {
+    color: #FFF;
+    text-align: center;
+    font-family: Cambon;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-white-header {
+        font-size: 72px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-white-header {
+        font-size: 32px;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+.font-gellix-content-start {
+    color: #2A2A2A;
+    text-align: start;
+    font-family: Gellix;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.font-gellix-button {
+    color: #FFF;
+    font-family: Gellix;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    /* 180% */
+}
+
+.font-gellix-title-content {
+    color: #000;
+    font-family: Gellix;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+}
+
+.font-gellix-title-content-h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-title-content-h1 {
+        font-size: 72px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-title-content-h1 {
+        font-size: 12px;
+        text-align: center;
+        line-height: 10px;
+    }
+}
+
+.font-cambon-hero {
+    color: #FFF;
+    font-family: Cambon;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 96px;
+    /* default: desktop */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-hero {
+        font-size: 72px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-hero {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+
+.font-cambon-hero-content {
+    color: #FFF;
+    text-align: center;
+    font-family: Gellix;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-hero-content {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-hero-content {
+        font-size: 16px;
+        text-align: center;
+    }
+}
