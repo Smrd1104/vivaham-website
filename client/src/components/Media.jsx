@@ -5,7 +5,9 @@ import img1 from '../assets/media/media (1).png';
 import img2 from '../assets/media/media (2).png';
 import img3 from '../assets/media/media (3).png';
 import bgImage from '../assets/hero/bg-img.jpg';
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 const mediaData = [
     {
         image: img1,
@@ -58,6 +60,15 @@ const Media = () => {
         }
     };
 
+    useEffect(() => {
+        AOS.init({
+            once: false,
+            duration: 1500,
+
+            offset: 120      // whether animation should happen only once
+        });
+    }, []);
+
     return (
         <div className="relative w-full py-10">
             {/* Background Image */}
@@ -67,8 +78,8 @@ const Media = () => {
             ></div>
 
             <div className="pb-10">
-                <h1 className="relative text-center text-orange-400 text-2xl font-medium font-['Gellix']">Magazines & Media</h1>
-                <p className="relative text-center text-black text-5xl font-bold font-['Cambon'] leading-[60px]">The Voice of Luxury Weddings</p>
+                <h1 data-aos="fade-up" className="relative text-center text-orange-400 text-2xl font-medium font-['Gellix']">Magazines & Media</h1>
+                <p data-aos="fade-up" className="relative text-center text-black text-5xl font-bold font-['Cambon'] leading-[60px]">The Voice of Luxury Weddings</p>
             </div>
 
             {/* Cards grid */}

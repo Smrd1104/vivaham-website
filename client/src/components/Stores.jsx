@@ -34,11 +34,11 @@ const Stores = () => {
 
                 {/* Content */}
                 <div className="relative z-20  md:translate-y-72 translate-y-52 md:-mt-7 -mt-16 ">
-                    <h2 className="justify-start font-gellix-header">The Stores</h2>
-                    <p className="self-stretch text-center justify-start font-cambon-header-white-header mb-4">A Curated Universe of Bridal Luxury
+                    <h2 data-aos="fade-up" data-aos-duration="900" className="justify-start font-gellix-header">The Stores</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" className="self-stretch text-center justify-start font-cambon-header-white-header mb-4">A Curated Universe of Bridal Luxury
                     </p>
-                    <h2 className="self-stretch md:text-center justify-start font-gellix-title-content-h1 mb-4">A Curated Universe of Bridal Luxury.</h2>
-                    <p className="self-stretch md:text-center text-justify md:justify-start font-gellix-content-white  md:mx-68 mx-14">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
+                    <h2 data-aos="fade-up" data-aos-duration="1100" className="self-stretch md:text-center justify-start font-gellix-title-content-h1 mb-4">A Curated Universe of Bridal Luxury.</h2>
+                    <p data-aos="fade-up" data-aos-duration="1200" className="self-stretch md:text-center text-justify md:justify-start font-gellix-content-white  md:mx-68 mx-14">Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From
                         handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail
                         spaces—they’re experiences. Every piece tells a story, every visit creates a memory</p>
                 </div>

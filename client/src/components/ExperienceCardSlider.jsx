@@ -67,14 +67,14 @@ const ExperienceSlider = () => {
             <div className="container mx-auto relative md:z-0 lg:z-0 z-0">
                 <div className="py-2 md:px-10 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
                     <div className="flex flex-col gap-2 text-start">
-                        <h1 className="text-black md:text-5xl text-3xl font-bold font-['Cambon'] md:leading-[60px]">
+                        <h1 data-aos="fade-up" data-aos-duration="900" className="text-black md:text-5xl text-3xl font-bold font-['Cambon'] md:leading-[60px]">
                             Explore the Vivaham Experience
                         </h1>
-                        <h2 className="text-black text-xs  font-semibold font-['Gellix'] uppercase md:tracking-[3.20px]">
+                        <h2 data-aos="fade-up" data-aos-duration="900" className="text-black text-xs  font-semibold font-['Gellix'] uppercase md:tracking-[3.20px]">
                             Luxury, Tradition & Innovation in Every Detail
                         </h2>
                     </div>
-                    <div className="flex flex-row gap-2 md:justify-end justify-between">
+                    <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 md:justify-end justify-between">
                         <button
                             className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
                             onClick={() => swiperRef?.slidePrev()}

@@ -36,10 +36,10 @@ const PartnerSection = () => {
             ></div>
 
             <div className='container mx-auto'>
-                <h1 className="text-center text-black md:text-5xl text-3xl font-bold font-['Cambon'] leading-[60px]">
+                <h1 data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-5xl text-3xl font-bold font-['Cambon'] leading-[60px]">
                     Partner with Vivaham
                 </h1>
-                <p className="text-center text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
+                <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
                     Embrace the Fusion of Timeless Indian Heritage and Contemporary Style
                 </p>
 

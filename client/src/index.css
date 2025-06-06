@@ -306,3 +306,9 @@
         text-align: center;
     }
 }
+
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}

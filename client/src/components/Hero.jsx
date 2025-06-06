@@ -10,15 +10,15 @@ const Hero = () => {
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col items-center md:translate-y-10 translate-y-68 px-4">
                 {/* Logo */}
-                <img src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px]" />
+                <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px]" />
 
                 {/* Heading */}
-                <p className=" text-white  font-cambon-hero ">
+                <p data-aos="fade-up" data-aos-duration="900" className=" text-white  font-cambon-hero ">
                     Vivaham Luxury Expo
                 </p>
 
                 {/* Subheading */}
-                <p className="text-center justify-start font-cambon-hero-content">
+                <p data-aos="fade-up" data-aos-duration="900" className="text-center justify-start font-cambon-hero-content">
                     Your Gateway to Remarkable Indian Weddings & Beyond
                 </p>
             </div>
