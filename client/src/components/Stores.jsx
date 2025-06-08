@@ -52,6 +52,7 @@ const Stores = () => {
                                 src={img}
                                 alt="brand"
                                 className="md:w-[350px] w-[250px] object-contain mx-2"
+                                loading="lazy"
                             />
                         ))}
                     </div>
@@ -66,6 +67,7 @@ const Stores = () => {
                                 src={img}
                                 alt="brand"
                                 className="md:w-[350px] w-[250px] object-contain mx-2"
+                                loading="lazy"
                             />
                         ))}
                     </div>

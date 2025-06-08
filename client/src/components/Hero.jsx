@@ -5,12 +5,12 @@ const Hero = () => {
         <div className="relative w-full h-screen">
             <div className="absolute inset-0 bg-black/40 bg-opacity-50 z-0"></div>
             {/* Background Image */}
-            <img src={img} alt="Hero Background" className="md:w-full  h-screen md:h-full md:object-cover  " />
+            <img src={img} alt="Hero Background" className="md:w-full  h-screen md:h-full md:object-cover  " loading="lazy" />
 
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col items-center md:translate-y-10 translate-y-68 px-4">
                 {/* Logo */}
-                <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px]" />
+                <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px]" loading="lazy" />
 
                 {/* Heading */}
                 <p data-aos="fade-up" data-aos-duration="900" className=" text-white  font-cambon-hero ">

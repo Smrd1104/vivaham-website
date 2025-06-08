@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer aria-label="Footer section" className="px-10 py-14 bg-zinc-800 flex flex-col justify-start items-center gap-20 overflow-hidden">
+        <footer aria-label="Footer section" className="px-10 py-14 bg-zinc-800 flex flex-col justify-start items-center gap-20 overflow-hidden  z-10 relative">
             <div className="w-full container mx-auto flex md:flex-row flex-col justify-between items-start gap-10">
                 {/* Our Presence */}
                 <div role="region" aria-labelledby="presence-heading" className=" flex flex-col gap-6">

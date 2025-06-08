@@ -9,10 +9,11 @@ const Franchise = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
+                loading="lazy"
             ></div>
             <div className="container mx-auto">
                 <div className=" relative self-stretch md:inline-flex  md:justify-start justify-center items-center md:gap-10  md:px-14 px-5 ">
-                    <img data-aos="fade-right" data-aos-duration="900" className="md:flex-1 md:w-[600px] w-[400px] md:h-[680px] h-[500px] " src={img} />
+                    <img loading="lazy" data-aos="fade-right" data-aos-duration="900" className="md:flex-1 md:w-[600px] w-[400px] md:h-[680px] h-[500px] " src={img} />
                     <div className="md:w-[840px] inline-flex flex-col justify-center items-start gap-8">
                         <div className="self-stretch flex flex-col justify-start items-start gap-4 md:mt-0 mt-5">
                             <h1 data-aos="fade-up" data-aos-duration="900" className="justify-start text-orange-400 text-2xl font-medium font-['Gellix']">The Franchise</h1>

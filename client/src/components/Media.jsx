@@ -75,6 +75,7 @@ const Media = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
+                loading="lazy"
             ></div>
 
             <div className="pb-10">

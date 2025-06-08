@@ -90,6 +90,7 @@ const Studio = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
+                loading="lazy"
             />
 
             <div className="container mx-auto relative z-10">
@@ -97,8 +98,8 @@ const Studio = () => {
 
                     {/* Heading */}
                     <div className="flex flex-col items-center gap-4 text-center">
-                        <h1 data-aos="fade-up" className="text-orange-400 text-2xl font-medium font-['Gellix']">The Studio</h1>
-                        <h2 data-aos="fade-up" className="text-zinc-800 md:text-5xl text-3xl font-bold font-['Cambon']">
+                        <h1 data-aos="fade-up" className="text-orange-400 text-2xl font-medium font-gellix-header">The Studio</h1>
+                        <h2 data-aos="fade-up" className="text-zinc-800 md:text-5xl text-3xl font-bold font-cambon-header">
                             Lorem ipsum molestie massa sed at nunc.
                         </h2>
                     </div>
@@ -113,7 +114,7 @@ const Studio = () => {
                                     onClick={() =>
                                         sectionRefs.current[index]?.scrollIntoView({ behavior: "smooth" })
                                     }
-                                    className={`md:px-4 px-5 py-6 text-left border-b md:w-[400px] w-[370px] cursor-pointer md:text-lg font-['Gellix'] transition-all duration-200 relative ${index === activeTabIndex
+                                    className={`md:px-4 px-5 py-6 text-left border-b md:w-[400px] w-[370px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
                                         ? "text-zinc-800 font-bold"
                                         : "text-slate-500 font-medium"
                                         }`}
@@ -148,6 +149,7 @@ const Studio = () => {
                                         src={tab.image}
                                         alt={tab.title}
                                         className="w-full h-[395px] object-cover rounded mt-4"
+                                        loading="lazy"
                                     />
                                 </section>
                             ))}

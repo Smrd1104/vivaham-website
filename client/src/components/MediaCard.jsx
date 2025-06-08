@@ -3,7 +3,7 @@ import React from 'react';
 const MediaCard = ({ image, title, description, onPreview }) => {
     return (
         <div className='shadow'>
-            <img className="self-stretch w-full h-[351px]" src={image} alt={title} />
+            <img className="self-stretch w-full h-[351px]" src={image} alt={title} loading="lazy" />
             <div className='p-4'>
                 <div className='flex flex-col gap-5 mt-5'>
                     <div className="text-black text-3xl font-bold font-['Cambon']">{title}</div>

@@ -10,6 +10,7 @@ const Partner = ({ title, heading, subheading, description, image }) => {
                 <div
                     className="absolute inset-0 bg-no-repeat md:bg-cover md:bg-center bg- z-0  "
                     style={{ backgroundImage: `url(${image})` }}
+                    loading="lazy"
                 ></div>
 
                 {/* Foreground Content */}

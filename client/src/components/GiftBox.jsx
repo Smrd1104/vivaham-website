@@ -2,7 +2,7 @@ import React from 'react';
 import giftOne from "../assets/gifts/gift1.png"
 const GiftBox = () => {
     return (
-        <div className=" bg-rose-100 px-4">
+        <div className=" bg-rose-100 px-4 z-10 relative">
             <section className="w-full container mx-auto py-16  flex flex-col justify-center items-center gap-10">
                 {/* Heading */}
                 <div className="text-center">

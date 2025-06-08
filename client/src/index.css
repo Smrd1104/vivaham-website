@@ -35,61 +35,57 @@
 }
 
 /* Gellix Regular */
-@font-face {
-    src: url('./assets/fonts/gellix/GellixBlack.otf') format('woff2');
-    color: #2A2A2A;
-    text-align: center;
-    font-family: Gellix;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 36px;
-    /* 180% */
-}
+/* src/index.css */
 
+/* Gellix Font Family */
 @font-face {
-    src: url('./assets/fonts/gellix/GellixBlack.otf') format('woff2');
-    color: #000;
-    font-family: Gellix;
-    font-size: 16px;
-    font-style: normal;
+    font-family: 'Gellix';
+    src: url('./assets/fonts/gellix/GellixBlack.otf') format('opentype');
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
-    /* 180% */
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
+    font-family: 'Gellix';
     src: url('./assets/fonts/gellix/GellixSemiBold.otf') format('opentype');
-    color: #F6A634;
-    font-family: Gellix;
-    font-size: 24px;
+    font-weight: 600;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-
-
-    /* 180% */
+    font-display: swap;
 }
 
-/* Canon Bold */
 @font-face {
-    src: url('./assets/fonts/CAMBON/Cambon-Black.eot') format('woff2');
-    color: #2A2A2A;
-    font-family: Cambon;
-    font-size: 48px;
+    font-family: 'Gellix';
+    src: url('./assets/fonts/gellix/GellixMedium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
+}
+
+/* Cambon Font Family */
+@font-face {
+    font-family: 'Cambon';
+    src: url('./assets/fonts/CAMBON/Cambon-Black.eot') format('embedded-opentype');
+    /* url('./assets/fonts/CAMBON/Cambon-Black.woff2') format('woff2'),
+        url('./assets/fonts/CAMBON/Cambon-Black.woff') format('woff'); */
     font-weight: 700;
-    line-height: normal;
-
-
+    font-style: normal;
+    font-display: swap;
 }
 
 .font-cambon-header {
     color: #2A2A2A;
-    font-family: Cambon;
+    font-family: Cambon, serif;
     font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.font-cambon-header-stories {
+    color: #2A2A2A;
+    font-family: Cambon, serif;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -98,7 +94,7 @@
 .font-cambon-header-white {
     color: #FFF;
     text-align: center;
-    font-family: Cambon;
+    font-family: Cambon, serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -124,7 +120,7 @@
 
 .font-gellix-header {
     color: #F6A634;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -134,7 +130,7 @@
 .font-gellix-content {
     color: #2A2A2A;
     text-align: center;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -144,7 +140,7 @@
 .font-gellix-content-white {
     color: #FFF;
     text-align: center;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -171,7 +167,7 @@
 .font-cambon-header-white-header {
     color: #FFF;
     text-align: center;
-    font-family: Cambon;
+    font-family: Cambon, serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -198,8 +194,18 @@
 .font-gellix-content-start {
     color: #2A2A2A;
     text-align: start;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.font-gellix-content-start-studios {
+    color: #2A2A2A;
+    text-align: start;
+    font-family: Gellix, sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
@@ -207,7 +213,7 @@
 
 .font-gellix-button {
     color: #FFF;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -217,7 +223,7 @@
 
 .font-gellix-title-content {
     color: #000;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -230,7 +236,7 @@
 .font-gellix-title-content-h1 {
     color: #FFF;
     text-align: center;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -258,7 +264,7 @@
 
 .font-cambon-hero {
     color: #FFF;
-    font-family: Cambon;
+    font-family: Cambon, serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -285,7 +291,7 @@
 .font-cambon-hero-content {
     color: #FFF;
     text-align: center;
-    font-family: Gellix;
+    font-family: Gellix, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;

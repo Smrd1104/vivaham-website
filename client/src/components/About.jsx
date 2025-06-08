@@ -8,6 +8,7 @@ const About = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
+                loading="lazy"
             ></div>
 
             {/* Foreground Content */}
@@ -21,7 +22,7 @@ const About = () => {
                         Luxury, Tradition And Innovation - All in One Grand Experience
                     </h2>
 
-                    <p data-aos="fade-up" data-aos-duration="1000" className="text-zinc-800 md:text-xl text-md font-medium font-gellix-content leading-9">
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content ">
                         Vivaham Luxury Expo Pvt Ltd is not just a name, it’s a movement that redefines the grandeur of Indian weddings.
                         We go beyond mere planning and bring together innovation, culture, and luxury under one roof. Whether it’s crafting
                         dreamlike bridal experiences, curating industry-defining conventions, or connecting the finest brands with their

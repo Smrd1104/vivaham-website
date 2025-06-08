@@ -8,6 +8,7 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
                 src={img}
                 alt="Experience"
                 className="w-full h-[550px] object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
             />
 
             {/* Content */}
