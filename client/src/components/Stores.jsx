@@ -33,7 +33,7 @@ const Stores = () => {
                 <div className="absolute inset-0 bg-black/70 bg-opacity-50 z-10"></div>
 
                 {/* Content */}
-                <div className="relative z-20  md:translate-y-66 translate-y-44  py-1 ">
+                <div className="relative z-20  md:translate-y-66 translate-y-44 md:-mt-9  ">
                     <h2 data-aos="fade-up" data-aos-duration="900" className="justify-start font-gellix-header ">The Stores</h2>
                     <p data-aos="fade-up" data-aos-duration="1000" className="self-stretch text-center justify-start font-cambon-header-white-header mb-4">A Curated Universe of Bridal Luxury
                     </p>
