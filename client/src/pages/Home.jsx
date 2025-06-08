@@ -34,12 +34,14 @@ const Home = () => {
                 <Franchise />
                 <Stores />
                 <Studio />
+
                 <Stories />
                 <Journey />
+                <GiftBox />
                 <Media />
                 <PartnerSection />
                 <ExperienceSlider />
-                <GiftBox />
+
 
 
 

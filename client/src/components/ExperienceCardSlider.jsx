@@ -58,7 +58,7 @@ const ExperienceSlider = () => {
     const [swiperRef, setSwiperRef] = useState(null); // ✅ useState instead of useRef
 
     return (
-        <div className="py-20 relative w-full min-h-[700px] z-90 ">
+        <div className="md:py-20 relative w-full md:min-h-[700px] z-90 ">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
@@ -68,10 +68,10 @@ const ExperienceSlider = () => {
             <div className="container mx-auto relative md:z-0 lg:z-0 z-0">
                 <div className="py-2 md:px-10 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
                     <div className="flex flex-col gap-2 text-start">
-                        <h1 data-aos="fade-up" data-aos-duration="900" className="text-black md:text-5xl text-3xl font-bold font-['Cambon'] md:leading-[60px]">
+                        <h1 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
                             Explore the Vivaham Experience
                         </h1>
-                        <h2 data-aos="fade-up" data-aos-duration="900" className="text-black text-xs  font-semibold font-['Gellix'] uppercase md:tracking-[3.20px]">
+                        <h2 data-aos="fade-up" data-aos-duration="900" className="md:text-start text-center  text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
                             Luxury, Tradition & Innovation in Every Detail
                         </h2>
                     </div>
@@ -107,7 +107,7 @@ const ExperienceSlider = () => {
                             },
                             // Desktops (1024px and above)
                             1024: {
-                                slidesPerView: 2.5,
+                                slidesPerView: 2.2,
                             },
                         }}
                         modules={[Navigation, Pagination]}

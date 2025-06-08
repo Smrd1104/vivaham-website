@@ -16,9 +16,9 @@ const Franchise = () => {
                     <img loading="lazy" data-aos="fade-right" data-aos-duration="900" className="md:flex-1 md:w-[600px] w-[400px] md:h-[680px] h-[500px] " src={img} />
                     <div className="md:w-[840px] inline-flex flex-col justify-center items-start gap-8">
                         <div className="self-stretch flex flex-col justify-start items-start gap-4 md:mt-0 mt-5">
-                            <h1 data-aos="fade-up" data-aos-duration="900" className="justify-start text-orange-400 text-2xl font-medium font-['Gellix']">The Franchise</h1>
-                            <h2 data-aos="fade-up" data-aos-duration="900" className="self-stretch justify-start font-cambon-header ">Own a Legacy in Luxury Weddings</h2>
-                            <h3 data-aos="fade-up" data-aos-duration="900" className="self-stretch justify-start font-gellix-title-content">Your Opportunity to Lead Luxury</h3>
+                            <h1 data-aos="fade-up" data-aos-duration="900" className="text-center font-gellix-header">The Franchise</h1>
+                            <h2 data-aos="fade-up" data-aos-duration="900" className="self-stretch justify-start font-cambon-header  ">Own a Legacy in Luxury Weddings</h2>
+                            <h3 data-aos="fade-up" data-aos-duration="900" className="self-stretch justify-start text-start text-black md:text-sm text-sm font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2.2px]">Your Opportunity to Lead Luxury</h3>
                         </div>
                         <p data-aos="fade-up" data-aos-duration="900" className="self-stretch justify-start  font-gellix-content-start ">Be part of an ecosystem where wedding dreams translate into business excellence. The Vivaham franchise model isn’t about joining a brand; it’s about owning a legacy. With multiple revenue streams—from international expos and curated bridal markets to highprofile academies and magazines—we empower you to create your own success story. This is more than a franchise; it’s your gateway to becoming a trendsetter in the global wedding industry</p>
                         <Link to="/franchise">

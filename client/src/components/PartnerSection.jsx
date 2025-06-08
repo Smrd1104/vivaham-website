@@ -28,7 +28,7 @@ const PartnerSection = () => {
     ];
 
     return (
-        <div className="relative w-full ">
+        <div className="relative w-full md:py-10 md:mt-10 mt-14 ">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
@@ -36,14 +36,14 @@ const PartnerSection = () => {
             ></div>
 
             <div className='container mx-auto'>
-                <h1 data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-5xl text-3xl font-bold font-['Cambon'] leading-[60px]">
+                <h1 data-aos="fade-up" data-aos-duration="900" className="text-center font-cambon-header">
                     Partner with Vivaham
                 </h1>
-                <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
+                <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-sm text-[0.5rem] mt-4 md:font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px]">
                     Embrace the Fusion of Timeless Indian Heritage and Contemporary Style
                 </p>
 
-                <div className="flex md:flex-row flex-col justify-between gap-5 overflow-hidden md:px-14 px-5">
+                <div className="flex md:flex-row flex-col md:justify-between  gap-5 overflow-hidden md:px-14 px-5">
                     {partnerData.map((item, index) => (
                         <Partner
                             key={index}

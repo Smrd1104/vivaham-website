@@ -4,31 +4,33 @@ import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 
 const Stories = () => {
     return (
-        <div className='  relative md:mx-14 mx-5 '>
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-no-repeat bg-cover bg-center z-10 "
-                style={{ backgroundImage: `url(${stories})` }}
-                loading="lazy"
-            ></div>
-            <div className="  container mx-auto  relative w-full   min-h-screen md:max-w-[1580px] h-[650px] overflow-hidden px-10  ">
+        <div className='md:px-10 px-2'>
+            <div className='  relative   container mx-auto '>
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 bg-no-repeat bg-cover bg-center z-10 "
+                    style={{ backgroundImage: `url(${stories})` }}
+                    loading="lazy"
+                ></div>
+                <div className="    relative w-full   md:min-h-screen min-h-[900px]  h-[650px] overflow-hidden px-10  ">
 
 
-                {/* Foreground Content */}
-                <div className="relative z-10  h-full  md:-right-20 ">
-                    <div className="absolute   md:right-0 md:p-12    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/10  shadow-lg">
-                        <div className="flex flex-col gap-4 ">
-                            <div className="text-orange-400 md:text-xl text-md md:text-start text-center font-medium font-gellix">The Stories</div>
-                            <h2 className="text-black md:text-4xl text-2xl md:text-start text-center font-bold font-cambon-header-stories md:leading-[48px] leading-[24px]">
-                                A Curated Universe of <br />Bridal Luxury
-                            </h2>
-                            <div className="text-black md:text-sm md:text-start text-center text-xs font-bold font-gellix-title-content uppercase tracking-[3.20px]">
-                                A Curated Universe of Bridal Luxury.
+                    {/* Foreground Content */}
+                    <div className="relative z-10  h-full  md:-right-20 ">
+                        <div className="absolute   md:right-0 md:p-12    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/10  shadow-lg">
+                            <div className="flex flex-col gap-4 ">
+                                <div className="md:text-start text-center font-gellix-header">The Stories</div>
+                                <h2 className=" font-cambon-header-stories md:text-start text-center leading-[24px]">
+                                    A Curated Universe of <br />Bridal Luxury
+                                </h2>
+                                <div className=" font-gellix-title-content text-center md:text-start">
+                                    A Curated Universe of Bridal Luxury.
+                                </div>
                             </div>
+                            <p className="mt-6 font-gellix-content-start-studios">
+                                Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail spaces—they’re experiences. Every piece tells a story, every visit creates a memory.
+                            </p>
                         </div>
-                        <p className="mt-6 text-black md:text-[1rem] text-xs md:text-start text-center font-medium font-gellix-content-start md:leading-9">
-                            Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail spaces—they’re experiences. Every piece tells a story, every visit creates a memory.
-                        </p>
                     </div>
                 </div>
             </div>

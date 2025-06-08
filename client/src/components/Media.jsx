@@ -70,7 +70,7 @@ const Media = () => {
     }, []);
 
     return (
-        <div className="relative w-full py-10">
+        <div className="relative w-full py-10 ">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
@@ -79,8 +79,8 @@ const Media = () => {
             ></div>
 
             <div className="pb-10">
-                <h1 data-aos="fade-up" className="relative text-center text-orange-400 text-2xl font-medium font-['Gellix']">Magazines & Media</h1>
-                <p data-aos="fade-up" className="relative text-center text-black text-5xl font-bold font-['Cambon'] leading-[60px]">The Voice of Luxury Weddings</p>
+                <h1 data-aos="fade-up" className="relative text-center text-orange-400 text-2xl font-medium font-gellix-header">Magazines & Media</h1>
+                <p data-aos="fade-up" className="relative text-center  font-cambon-header  mt-4 ">The Voice of Luxury Weddings</p>
             </div>
 
             {/* Cards grid */}

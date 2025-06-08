@@ -82,6 +82,32 @@
     line-height: normal;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header {
+        font-size: 48px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.font-cambon-header-studio {
+    color: #2A2A2A;
+    font-family: Cambon, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
 .font-cambon-header-stories {
     color: #2A2A2A;
     font-family: Cambon, serif;
@@ -89,6 +115,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-stories {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-stories {
+        font-size: 32px;
+        text-align: center;
+    }
 }
 
 .font-cambon-header-white {
@@ -126,6 +167,58 @@
     font-weight: 500;
     line-height: normal;
 }
+
+.font-gellix-header-start {
+    color: #F6A634;
+    font-family: Gellix, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-header {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-header {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.font-cambon-header-journey {
+    color: #000;
+    text-align: center;
+    font-family: Cambon, serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-journey {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-journey {
+        font-size: 40px;
+        text-align: center;
+        line-height: 48px;
+    }
+}
+
 
 .font-gellix-content {
     color: #2A2A2A;
@@ -201,6 +294,23 @@
     line-height: 36px;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-content-start {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-content-start {
+        font-size: 14px;
+        text-align: center;
+        line-height: 2;
+
+    }
+}
+
 .font-gellix-content-start-studios {
     color: #2A2A2A;
     text-align: start;
@@ -209,6 +319,24 @@
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-content-start-studios {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-content-start-studios {
+        font-size: 14px;
+        text-align: start;
+        line-height: 2;
+
+    }
 }
 
 .font-gellix-button {
@@ -233,6 +361,24 @@
 
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-title-content {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-title-content {
+        font-size: 10px;
+        text-align: center;
+        line-height: 10px;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+    }
+}
+
 .font-gellix-title-content-h1 {
     color: #FFF;
     text-align: center;
@@ -243,6 +389,7 @@
     line-height: normal;
     letter-spacing: 3.2px;
     text-transform: uppercase;
+
 
 }
 
@@ -317,4 +464,17 @@
 .scroll-hidden::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari, Opera */
+}
+
+
+
+/* cambon cart content  */
+
+.card-cambon-header {
+    color: #000;
+    font-family: Cambon, serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

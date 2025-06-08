@@ -51,7 +51,7 @@ const Journey = () => {
                     ref={headingRef}
                     className="w-full h-screen flex justify-center items-center z-0 px-4"
                 >
-                    <h1 className="text-center text-black text-3xl sm:text-4xl md:text-5xl font-bold font-['Cambon'] max-w-4xl">
+                    <h1 className="text-center text-black text-3xl sm:text-4xl md:text-5xl font-bold font-cambon-header-journey  max-w-5xl">
                         A visual journey through the luxury, culture, and charm of Vivaham.
                     </h1>
                 </div>
