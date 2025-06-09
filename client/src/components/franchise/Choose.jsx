@@ -22,14 +22,14 @@ const Choose = () => {
             ></div>
 
             <div className="relative py-20 container mx-auto ">
-                <div className="py-10 px-14">
-                    <h2 className="font-cambon-header">Why Choose a Vivaham® Franchise?</h2>
+                <div className="py-10 md:px-14 px-5 flex flex-col gap-5">
+                    <h2 className="font-cambon-header-start">Why Choose a Vivaham® Franchise?</h2>
                     <p className="text-black text-base font-bold font-['Gellix'] uppercase tracking-[3.20px]">
                         Because we are not offering you a franchise. We are offering you a wedding legacy.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-10 py-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-10 px-5 py-10">
                     {cardData.map((text, index) => (
                         <ChooseCard key={index} number={index + 1} text={text} />
                     ))}

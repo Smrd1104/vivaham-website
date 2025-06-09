@@ -82,6 +82,31 @@
     line-height: normal;
 }
 
+.font-cambon-header-start {
+    color: #2A2A2A;
+    font-family: Cambon, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-start {
+        font-size: 48px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-start {
+        font-size: 40px;
+        text-align: start;
+        line-height: normal;
+    }
+}
+
 .font-cambon-header-franchise {
     color: #FFF;
     font-family: Cambon, serif;
@@ -90,6 +115,24 @@
     line-height: normal;
     font-size: 82px;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-franchise {
+        font-size: 48px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-franchise {
+        font-size: 52px;
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -359,7 +402,7 @@
     .font-gellix-content-white {
         font-size: 20px;
         text-align: justify;
-        line-height: 18px;
+        line-height: 36px;
     }
 }
 
@@ -455,6 +498,24 @@
     line-height: 36px;
     /* 180% */
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-button {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-button {
+        font-size: 20px;
+        text-align: start;
+
+    }
+}
+
+
 
 .font-gellix-title-content {
     color: #000;

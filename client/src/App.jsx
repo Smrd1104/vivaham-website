@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import { useEffect } from "react";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const App = () => {
 
@@ -16,6 +17,8 @@ const App = () => {
   return (
     <>
       <main className="flex-grow overflow-hidden ">
+        {/* Your content here */}
+        <ScrollToTopButton />
         <Outlet />
       </main>
       <Footer />

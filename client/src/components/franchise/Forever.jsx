@@ -7,11 +7,11 @@ const Hero = () => {
             <img src={img} alt="Hero Background" className="md:w-full  md:h-[573px] h-[373px]  md:object-cover  " loading="lazy" />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center ">
+            <div className="absolute inset-0 flex flex-col items-center justify-center container mx-auto ">
 
 
                 {/* Heading */}
-                <p data-aos="fade-up" data-aos-duration="900" className=" font-cambon-header-forever md:px-40">
+                <p data-aos="fade-up" data-aos-duration="900" className=" font-cambon-header-forever md:px-40 px-5">
                     Vivaham®  – Because Forever Deserves a Franchise
                 </p>
 

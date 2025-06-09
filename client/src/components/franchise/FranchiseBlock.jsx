@@ -14,7 +14,7 @@ const FranchiseBlock = ({ title, tagline, description, inventoryTitle, inventory
                 />
                 <article className="flex flex-col gap-4 flex-1">
                     <header className="flex flex-col gap-4">
-                        <h2 className=" font-cambon-header">{title}</h2>
+                        <h2 className=" font-cambon-header-start">{title}</h2>
                         <p className="text-black text-base font-bold uppercase tracking-[3.20px] font-['Gellix']">
                             {tagline}
                         </p>
@@ -35,7 +35,7 @@ const FranchiseBlock = ({ title, tagline, description, inventoryTitle, inventory
                 </article>
 
             </section >
-           
+
         </div>
     );
 };

@@ -27,13 +27,13 @@ const reverseLogos = [revImg1, revImg2, revImg3, revImg4, revImg5, revImg6, revI
 
 const Stores = () => {
     return (
-        <div className="bg-black md:mt-40 mt-10 ">
+        <div className="bg-black py-10 ">
             <div className="relative  text-center  overflow-hidden container mx-auto z-0 ">
                 {/* Background Overlay */}
                 <div className="absolute inset-0 bg-black/70 bg-opacity-50 z-10"></div>
 
                 {/* Content */}
-                <div className="relative z-20  md:translate-y-66 translate-y-44 md:-mt-9 -mt-8  ">
+                <div className="absolute z-20  md:translate-y-66 translate-y-24   ">
                     <h2 data-aos="fade-up" data-aos-duration="900" className="justify-start font-gellix-header ">The Stores</h2>
                     <p data-aos="fade-up" data-aos-duration="1000" className="self-stretch text-center justify-start font-cambon-header-white-header mb-4">A Curated Universe of Bridal Luxury
                     </p>
@@ -43,34 +43,38 @@ const Stores = () => {
                         spaces—they’re experiences. Every piece tells a story, every visit creates a memory</p>
                 </div>
 
-                {/* Marquee Wrapper */}
-                <div className="relative w-full overflow-hidden  -translate-y-62">
-                    <div className="flex whitespace-nowrap animate-marquee opacity-80">
-                        {[...logos, ...logos].map((img, index) => (
-                            <img
-                                key={index}
-                                src={img}
-                                alt="brand"
-                                className="md:w-[350px] w-[250px] object-contain mx-2"
-                                loading="lazy"
-                            />
-                        ))}
-                    </div>
-                </div>
+                <div className="flex flex-col gap-5 relative">
 
-                {/* Marquee Bottom (Reverse Scroll) */}
-                <div className="relative w-full overflow-hidden mt-2  -translate-y-60 -mb-58">
-                    <div className="flex whitespace-nowrap animate-marquee-reverse min-w-max opacity-80">
-                        {[...reverseLogos, ...reverseLogos].map((img, index) => (
-                            <img
-                                key={`bottom-${index}`}
-                                src={img}
-                                alt="brand"
-                                className="md:w-[350px] w-[250px] object-contain mx-2"
-                                loading="lazy"
-                            />
-                        ))}
+                    {/* Marquee Wrapper */}
+                    <div className=" w-full overflow-hidden  ">
+                        <div className="flex whitespace-nowrap animate-marquee opacity-80">
+                            {[...logos, ...logos].map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt="brand"
+                                    className="md:w-[350px] w-[250px] object-contain mx-2"
+                                    loading="lazy"
+                                />
+                            ))}
+                        </div>
                     </div>
+
+                    {/* Marquee Bottom (Reverse Scroll) */}
+                    <div className=" w-full overflow-hidden  ">
+                        <div className="flex whitespace-nowrap animate-marquee-reverse min-w-max opacity-80">
+                            {[...reverseLogos, ...reverseLogos].map((img, index) => (
+                                <img
+                                    key={`bottom-${index}`}
+                                    src={img}
+                                    alt="brand"
+                                    className="md:w-[350px] w-[250px] object-contain mx-2"
+                                    loading="lazy"
+                                />
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
