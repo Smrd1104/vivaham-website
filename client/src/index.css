@@ -401,7 +401,7 @@
 @media (max-width: 768px) {
     .font-gellix-content-white {
         font-size: 20px;
-        text-align: justify;
+        text-align: center;
         line-height: 36px;
     }
 }

@@ -17,7 +17,7 @@ const About = () => {
                     About Us
                 </h1>
 
-                <div className="flex flex-col items-center justify-center gap-5 md:px-38 text-center">
+                <div className="flex flex-col items-center justify-center gap-5 md:px-38 px-5 text-center">
                     <h2 data-aos="fade-up" data-aos-duration="900" className="text-zinc-800 md:text-5xl text-3xl font-bold font-cambon-header">
                         Luxury, Tradition And Innovation - All in One Grand Experience
                     </h2>

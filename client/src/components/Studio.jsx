@@ -146,7 +146,7 @@ const Studio = () => {
     }, [activeTabIndex]);
 
     return (
-        <div className="w-full min-h-screen relative py-20 px-2 bg-white">
+        <div className="w-full  relative py-20 px-2 bg-white">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
@@ -154,7 +154,7 @@ const Studio = () => {
             />
 
             <div className="container mx-auto relative z-10">
-                <div className="flex flex-col items-center gap-12 md:mx-14">
+                <div className="flex flex-col items-center  md:mx-14">
                     {/* Heading */}
                     <div className="flex flex-col items-center gap-4 text-center">
                         <h1 data-aos="fade-up" className="text-orange-400 text-2xl font-medium font-gellix-header">The Studio</h1>
@@ -164,21 +164,21 @@ const Studio = () => {
                     </div>
 
                     {/* Layout */}
-                    <div className="flex  md:flex-row flex-col items-center-safe justify-center-safe md:gap-10 gap-14 w-full relative ">
+                    <div className="relative flex md:flex-row flex-col gap-5 items-center-safe py-10 ">
                         {/* Tab Titles */}
-                        <div className=" flex flex-col  md:sticky md:top-24 md:h-[calc(100vh-2rem)] overflow-hidden md:px-0 px-2 z-10">
+                        <div className=" flex flex-col  overflow-hidden md:px-0 px-2 z-10">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}
                                     onClick={() => scrollToSection(index)}
-                                    className={`md:px-4 px-5 py-6 text-left border-b md:w-[400px] w-[370px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
+                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b md:w-[400px] w-[400px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
                                         ? "text-zinc-800 font-bold"
                                         : "text-slate-500 font-medium"
                                         }`}
                                 >
                                     {tab.title}
                                     {index === activeTabIndex && (
-                                        <div className="absolute bottom-0 left-0 h-[1px] md:w-[400px] w-[370px] bg-zinc-800"></div>
+                                        <div className="absolute bottom-0 left-0 h-[1px] md:w-[400px] w-[400px] bg-zinc-800"></div>
                                     )}
                                 </button>
                             ))}
@@ -218,7 +218,7 @@ const Studio = () => {
                     </div>
 
                     {/* Progress Line */}
-                    <div className="w-full flex justify-center md:mt-10 -mt-10">
+                    <div className="w-full flex justify-center md:mt-10  -mt-10">
                         <div className="relative w-[90%] h-5 flex items-center">
                             <div className="absolute top-1/2 left-0 w-full h-1 bg-gray-200 transform -translate-y-1/2 z-0" />
                             <div

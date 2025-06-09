@@ -6,10 +6,10 @@ const GiftBox = () => {
             <section className="w-full container mx-auto py-16  flex flex-col justify-center items-center gap-10">
                 {/* Heading */}
                 <div className="text-center">
-                    <h1 data-aos="fade-up" data-aos-delay="800" className="text-black text-5xl font-bold font-cambon-header leading-[60px]">
+                    <h1 data-aos="fade-up" data-aos-delay="700" className="text-black text-5xl font-bold font-cambon-header leading-[60px]">
                         Vivaham Gift Box
                     </h1>
-                    <p data-aos="fade-up" data-aos-delay="900" className="mt-6  mx-auto  font-gellix-content leading-9">
+                    <p data-aos="fade-up" data-aos-delay="700" className="mt-6  mx-auto  font-gellix-content leading-9">
                         Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail spaces — they’re experiences. Every piece tells a story, every visit creates a memory.
                     </p>
                 </div>

@@ -77,13 +77,13 @@ const ExperienceSlider = () => {
                     </div>
                     <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 md:justify-end justify-between">
                         <button
-                            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                            className="lg:block hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
                             onClick={() => swiperRef?.slidePrev()}
                         >
                             <BiLeftArrowAlt className="text-[1.5rem]" />
                         </button>
                         <button
-                            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                            className="lg:block hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
                             onClick={() => swiperRef?.slideNext()}
                         >
                             <BiRightArrowAlt className="text-[1.5rem]" />
@@ -126,6 +126,20 @@ const ExperienceSlider = () => {
                         ))}
                     </Swiper>
                 </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 px-10 justify-between pb-5">
+                <button
+                    className="lg:hidden  p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                    onClick={() => swiperRef?.slidePrev()}
+                >
+                    <BiLeftArrowAlt className="text-[1.5rem]" />
+                </button>
+                <button
+                    className="lg:hidden  p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+                    onClick={() => swiperRef?.slideNext()}
+                >
+                    <BiRightArrowAlt className="text-[1.5rem]" />
+                </button>
             </div>
         </div >
     );
