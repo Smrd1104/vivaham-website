@@ -194,6 +194,33 @@
     }
 }
 
+.font-gellix-header-start-stories {
+    color: #F6A634;
+    font-family: Gellix, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-header-start-stories {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-header-start-stories {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+
 .font-cambon-header-journey {
     color: #000;
     text-align: center;

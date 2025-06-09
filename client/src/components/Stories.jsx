@@ -19,7 +19,7 @@ const Stories = () => {
                     <div className="relative z-10  h-full  md:-right-20 ">
                         <div className="absolute   md:right-0 md:p-12    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/10  shadow-lg">
                             <div className="flex flex-col gap-4 ">
-                                <div className="md:text-start text-center font-gellix-header">The Stories</div>
+                                <div className="font-gellix-header-start-stories">The Stories</div>
                                 <h2 className=" font-cambon-header-stories md:text-start text-center leading-[24px]">
                                     A Curated Universe of <br />Bridal Luxury
                                 </h2>
