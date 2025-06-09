@@ -3,7 +3,7 @@ import React from 'react';
 
 const Partner = ({ title, heading, subheading, description, image }) => {
     return (
-        <div className="mx-auto container my-16 ">
+        <div data-aos="fade-up" data-aos-delay="900" className="mx-auto container my-16 ">
 
             <div className="relative ">
                 {/* Background Image */}

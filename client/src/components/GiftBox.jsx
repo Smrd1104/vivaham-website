@@ -15,7 +15,7 @@ const GiftBox = () => {
                 </div>
 
                 {/* Gift Cards */}
-                <div className="w-full flex flex-wrap justify-center items-stretch gap-10">
+                <div data-aos="fade-up" data-aos-delay="700" className="w-full flex flex-wrap justify-center items-stretch gap-10">
                     {[1, 2, 3].map((num) => (
                         <article
                             key={num}

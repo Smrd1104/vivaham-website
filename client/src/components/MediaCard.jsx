@@ -2,7 +2,7 @@ import React from 'react';
 
 const MediaCard = ({ image, title, description, onPreview }) => {
     return (
-        <div className='shadow'>
+        <div data-aos="fade-up" data-aos-delay="900" className='shadow'>
             <img className="self-stretch w-full h-[351px]" src={image} alt={title} loading="lazy" />
             <div className='p-4'>
                 <div className='flex flex-col gap-5 mt-5'>

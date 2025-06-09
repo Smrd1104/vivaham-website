@@ -11,7 +11,7 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
     };
 
     return (
-        <div
+        <div data-aos="fade-up" data-aos-duration="900"
             className="relative overflow-hidden group w-full"
             onClick={handleToggle}
         >
