@@ -4,7 +4,7 @@ import Partner from './Partner';
 import stories from '../assets/stories/stories.jpg'; // Just once if used in all items
 import partner1 from '../assets/partner/partner1.jpg'; // Just once if used in all items
 import partner2 from '../assets/partner/partner2.jpg'; // Just once if used in all items
-import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
+import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 
 const PartnerSection = () => {
     const partnerData = [

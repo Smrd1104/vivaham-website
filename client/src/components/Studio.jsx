@@ -9,7 +9,7 @@ import img4 from "../assets/studio/studio (4).jpg";
 import img5 from "../assets/studio/studio (5).jpg";
 import img6 from "../assets/studio/studio (6).jpg";
 import img7 from "../assets/studio/studio (7).jpg";
-import bgImage from "../assets/hero/bg-img.jpg";
+import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 
 const tabs = [
     {

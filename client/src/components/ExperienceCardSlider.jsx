@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import bgImage from '../assets/hero/bg-img.jpg'; // adjust path if needed
+import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 import ExperienceCard from '../components/ExperienceCard';
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 

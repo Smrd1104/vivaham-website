@@ -1,6 +1,6 @@
 import img from "../assets/franchise/franchise.png"
 import { Link } from "react-router-dom"
-import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
+import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 
 const Franchise = () => {
     return (

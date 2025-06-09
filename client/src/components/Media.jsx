@@ -4,7 +4,7 @@ import Flipbook from './Flipbook';
 import img1 from '../assets/media/media (1).png';
 import img2 from '../assets/media/media (2).png';
 import img3 from '../assets/media/media (3).png';
-import bgImage from '../assets/hero/bg-img.jpg';
+import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
