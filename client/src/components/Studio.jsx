@@ -164,7 +164,7 @@ const Studio = () => {
                     </div>
 
                     {/* Layout */}
-                    <div className="flex  md:flex-row flex-col items-center-safe justify-center-safe md:gap-10 gap-8 w-full relative ">
+                    <div className="flex  md:flex-row flex-col items-center-safe justify-center-safe md:gap-10 gap-14 w-full relative ">
                         {/* Tab Titles */}
                         <div className=" flex flex-col  md:sticky md:top-24 md:h-[calc(100vh-2rem)] overflow-hidden md:px-0 px-2 z-10">
                             {tabs.map((tab, index) => (
@@ -202,7 +202,7 @@ const Studio = () => {
                                         <h3 className=" font-cambon-header-studio">
                                             {tab.title}
                                         </h3>
-                                        <p className=" font-gellix-content-start  9 mt-4">
+                                        <p className=" font-gellix-content-start   mt-4">
                                             {tab.content}
                                         </p>
                                     </div>
@@ -218,7 +218,7 @@ const Studio = () => {
                     </div>
 
                     {/* Progress Line */}
-                    <div className="w-full flex justify-center md:mt-10 -mt-14">
+                    <div className="w-full flex justify-center md:mt-10 -mt-10">
                         <div className="relative w-[90%] h-5 flex items-center">
                             <div className="absolute top-1/2 left-0 w-full h-1 bg-gray-200 transform -translate-y-1/2 z-0" />
                             <div

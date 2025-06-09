@@ -28,15 +28,15 @@ const PartnerSection = () => {
     ];
 
     return (
-        <div className="relative w-full md:py-10 md:mt-10 mt-14 ">
+        <div className="relative w-full  ">
             {/* Background Image */}
             <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0 "
                 style={{ backgroundImage: `url(${bgImage})` }}
             ></div>
 
-            <div className='container mx-auto'>
-                <h1 data-aos="fade-up" data-aos-duration="900" className="text-center font-cambon-header">
+            <div className='container mx-auto py-14'>
+                <h1 data-aos="fade-up" data-aos-duration="900" className="text-center font-cambon-header ">
                     Partner with Vivaham
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-sm text-[0.5rem] mt-4 md:font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px]">

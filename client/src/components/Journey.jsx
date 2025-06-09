@@ -45,7 +45,7 @@ const Journey = () => {
 
     return (
         <div className="bg-stone-100">
-            <div className="relative container mx-auto overflow-hidden pb-[500px]">
+            <div className="relative container mx-auto overflow-hidden md:pb-[700px] pb-[600px]">
                 {/* Fixed Heading */}
                 <div
                     ref={headingRef}

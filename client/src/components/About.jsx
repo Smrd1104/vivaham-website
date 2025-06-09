@@ -12,13 +12,13 @@ const About = () => {
             ></div>
 
             {/* Foreground Content */}
-            <div className="relative z-10 container mx-auto md:translate-y-40 translate-y-20 ">
+            <div className="relative z-10 container mx-auto md:translate-y-40 translate-y-5 md:my-0 my-20 ">
                 <h1 data-aos="fade-up" data-aos-duration="800" className=" font-gellix-header  text-center mb-8">
                     About Us
                 </h1>
 
                 <div className="flex flex-col items-center justify-center gap-5 lg:px-28 text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="900" className="text-zinc-800 md:text-5xl text-3xl font-bold font-['Cambon']">
+                    <h2 data-aos="fade-up" data-aos-duration="900" className="text-zinc-800 md:text-5xl text-3xl font-bold font-cambon-header">
                         Luxury, Tradition And Innovation - All in One Grand Experience
                     </h2>
 

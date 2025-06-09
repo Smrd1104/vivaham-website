@@ -58,7 +58,7 @@ const ExperienceSlider = () => {
     const [swiperRef, setSwiperRef] = useState(null); // ✅ useState instead of useRef
 
     return (
-        <div className="md:py-20 relative w-full md:min-h-[700px] z-90 ">
+        <div className="md:py-20  relative w-full md:min-h-[700px]  z-90 ">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
