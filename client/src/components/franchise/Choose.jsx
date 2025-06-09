@@ -23,8 +23,8 @@ const Choose = () => {
 
             <div className="relative py-20 container mx-auto ">
                 <div className="py-10 md:px-14 px-5 flex flex-col gap-5">
-                    <h2 className="font-cambon-header-start">Why Choose a Vivaham® Franchise?</h2>
-                    <p className="text-black text-base font-bold font-['Gellix'] uppercase tracking-[3.20px]">
+                    <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header-start">Why Choose a Vivaham® Franchise?</h2>
+                    <p data-aos="fade-up" data-aos-duration="900" className="text-black text-base font-bold font-['Gellix'] uppercase tracking-[3.20px]">
                         Because we are not offering you a franchise. We are offering you a wedding legacy.
                     </p>
                 </div>
