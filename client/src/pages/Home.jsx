@@ -13,11 +13,14 @@ import PartnerSection from '../components/PartnerSection';
 import Journey from '../components/Journey';
 import Media from '../components/Media';
 import GiftBox from '../components/GiftBox';
+import { useEffect } from 'react';
 
 const Home = () => {
+    
+
     return (
-        <div className="relative min-h-screen">
-            
+        <div className="">
+
             {/* Content layer */}
             <div className="relative z-10">
                 <Hero />
