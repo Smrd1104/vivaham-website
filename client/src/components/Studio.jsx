@@ -166,7 +166,7 @@ const Studio = () => {
                     {/* Layout */}
                     <div className="relative flex md:flex-row flex-col gap-5 items-center-safe py-10 ">
                         {/* Tab Titles */}
-                        <div className=" flex flex-col  overflow-hidden md:px-0 px-2 z-10">
+                        <div className=" flex flex-col  overflow-hidden md:px-0  z-10">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}

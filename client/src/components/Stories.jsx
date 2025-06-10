@@ -20,14 +20,14 @@ const Stories = () => {
                         <div className="absolute   md:right-0 md:p-12    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/10  shadow-lg">
                             <div className="flex flex-col gap-4 ">
                                 <div className="font-gellix-header-start-stories">The Stories</div>
-                                <h2 className=" font-cambon-header-stories md:text-start text-center leading-[24px]">
+                                <h2 className=" font-cambon-header-stories ">
                                     A Curated Universe of <br />Bridal Luxury
                                 </h2>
-                                <div className=" font-gellix-title-content text-center md:text-start">
+                                <div className=" font-gellix-title-content ">
                                     A Curated Universe of Bridal Luxury.
                                 </div>
                             </div>
-                            <p className="mt-6 font-gellix-content-start">
+                            <p className="mt-6 font-gellix-content">
                                 Step into Vivaham’s exclusive stores, where craftsmanship meets imagination. From handpicked designer couture to one-of-a-kind jewelry, our stores are more than retail spaces—they’re experiences. Every piece tells a story, every visit creates a memory.
                             </p>
                         </div>

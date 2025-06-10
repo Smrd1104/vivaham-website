@@ -16,9 +16,11 @@ const App = () => {
 
   return (
     <>
-      <main className="flex-grow overflow-hidden ">
+      <main className="flex-grow overflow-hidden">
         {/* Your content here */}
+
         <ScrollToTopButton />
+
         <Outlet />
       </main>
       <Footer />
