@@ -17,16 +17,7 @@ import GiftBox from '../components/GiftBox';
 const Home = () => {
     return (
         <div className="relative min-h-screen">
-            {/* Background image layer */}
-            {/* <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 "
-                style={{ backgroundImage: `url(${bgImage})` }}
-
-            >
-
-            </div> */}
-
-
+            
             {/* Content layer */}
             <div className="relative z-10">
                 <Hero />
@@ -34,7 +25,6 @@ const Home = () => {
                 <Franchise />
                 <Stores />
                 <Studio />
-
                 <Stories />
                 <Journey />
                 <GiftBox />
