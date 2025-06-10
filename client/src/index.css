@@ -179,8 +179,10 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-cambon-header-stories {
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
+        line-height: 1;
+
     }
 }
 
@@ -400,9 +402,9 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-gellix-content-white {
-        font-size: 20px;
-        text-align: center;
-        line-height: 36px;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 28px;
     }
 }
 
@@ -454,9 +456,9 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-gellix-content-start {
-        font-size: 20px;
-        text-align: start;
-        line-height: normal;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.3;
 
     }
 }
@@ -539,9 +541,9 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-gellix-title-content {
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
-        line-height: 10px;
+        line-height: 18px;
         letter-spacing: 3.2px;
         text-transform: uppercase;
     }
@@ -623,7 +625,7 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-cambon-hero-content {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
     }
 }

@@ -71,7 +71,7 @@ const ExperienceSlider = () => {
                         <h1 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
                             Explore the Vivaham Experience
                         </h1>
-                        <h2 data-aos="fade-up" data-aos-duration="900" className="md:text-start text-center  text-black md:text-sm text-xs font-bold font-['Gellix'] uppercase md:tracking-[3.20px]">
+                        <h2 data-aos="fade-up" data-aos-duration="900" className="md:text-start text-center  text-black md:text-[1rem] text-[0.7rem] font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[3.20px]">
                             Luxury, Tradition & Innovation in Every Detail
                         </h2>
                     </div>

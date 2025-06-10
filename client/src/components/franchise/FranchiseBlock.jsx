@@ -27,9 +27,9 @@ const FranchiseBlock = ({ title, tagline, description, inventoryTitle, inventory
                         <h3 data-aos="fade-left" data-aos-duration="900" className="text-zinc-800 text-2xl font-bold font-['Cambon']">{inventoryTitle}</h3>
                         <p data-aos="fade-left" data-aos-duration="900" className="text-zinc-800 text-xl font-medium leading-9 font-['Gellix']" dangerouslySetInnerHTML={{ __html: inventoryItems }} />
                     </div>
-                    <aside className="bg-[#FAF6F2] px-6 py-3 flex flex-col gap-2">
-                        <h3  data-aos="fade-left" data-aos-duration="900" className="text-zinc-800 text-2xl font-bold font-['Cambon']">{idealTitle}</h3>
-                        <p  data-aos="fade-left" data-aos-duration="900" className="text-black text-xl font-semibold leading-9 font-['Gellix']">
+                    <aside data-aos="fade-left" data-aos-duration="900" className="bg-[#FAF6F2] px-6 py-3 flex flex-col gap-2">
+                        <h3 className="text-zinc-800 text-2xl font-bold font-['Cambon']">{idealTitle}</h3>
+                        <p className="text-black text-xl font-semibold leading-9 font-['Gellix']">
                             {idealDescription}
                         </p>
                     </aside>

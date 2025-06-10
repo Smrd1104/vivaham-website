@@ -39,7 +39,7 @@ const PartnerSection = () => {
                 <h1 data-aos="fade-up" data-aos-duration="900" className="text-center font-cambon-header ">
                     Partner with Vivaham
                 </h1>
-                <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-sm text-[0.5rem] mt-4 md:font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px]">
+                <p data-aos="fade-up" data-aos-duration="900" className="text-center text-black md:text-[1rem] text-[0.7rem] mt-4 md:font-bold font-['Gellix'] uppercase md:tracking-[3.20px] tracking-[2px]">
                     Embrace the Fusion of Timeless Indian Heritage and Contemporary Style
                 </p>
 
