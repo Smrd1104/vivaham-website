@@ -48,9 +48,7 @@ const Footer = () => {
                     <p className="text-white text-md font-medium font-['Gellix']">
                         Follow our newsletter to stay updated about the company.
                     </p>
-                     <Link to={"/"} >
-                        <BsWhatsapp className='text-3xl  text-green-600  cursor-pointer' />
-                    </Link>
+
                     {/* <form className="flex gap-4">
                         <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 rounded text-black" />
                         <button type="submit" className="px-6 py-3 bg-white text-zinc-800 font-bold rounded">
