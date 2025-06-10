@@ -1,44 +1,33 @@
-import { Outlet } from "react-router-dom"
-import Footer from "./components/Footer"
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+// src/App.jsx
+import { Outlet, useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import { useEffect } from "react";
-import ScrollToTopButton from "./components/ScrollToTopButton"
-import { useState } from "react";
-import logo from "./assets/hero/vivaham-logo.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ScrollTop from "./components/ScrollTop";
+
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const location = useLocation();
 
+  // Initialize AOS once
   useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-    // Simulate loading (remove this in production)
-    const timer = setTimeout(() => setIsLoading(false), 150);
-    return () => clearTimeout(timer);
+    AOS.init({ once: true });
   }, []);
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-black/80">
-        <img
-          src={logo} // or .svg, .png, etc.
-          alt="Loading..."
-          className="md:w-100 w-50 md:h-100 h-50" // adjust size as needed
-        />
-      </div>
-    );
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
   }
+}, []);
+
+
+
+
 
   return (
     <>
+      <ScrollTop />
       <main className="flex-grow overflow-hidden">
         <ScrollToTopButton />
         <Outlet />
@@ -48,4 +37,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;

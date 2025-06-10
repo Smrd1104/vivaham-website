@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @keyframes marquee {
     from {
         transform: translateX(0);
@@ -64,7 +65,7 @@
 
 /* Cambon Font Family */
 @font-face {
-    font-family: 'Cambon';
+    font-family: 'Cambon ';
     src: url('./assets/fonts/CAMBON/Cambon-Black.eot') format('embedded-opentype');
     /* url('./assets/fonts/CAMBON/Cambon-Black.woff2') format('woff2'),
         url('./assets/fonts/CAMBON/Cambon-Black.woff') format('woff'); */
@@ -81,6 +82,8 @@
     font-weight: 700;
     line-height: normal;
 }
+
+
 
 .font-cambon-header-start {
     color: #2A2A2A;
@@ -101,7 +104,7 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-cambon-header-start {
-        font-size: 40px;
+        font-size: 32px;
         text-align: start;
         line-height: normal;
     }

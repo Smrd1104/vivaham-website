@@ -27,7 +27,7 @@ const reverseLogos = [revImg1, revImg2, revImg3, revImg4, revImg5, revImg6, revI
 
 const Stores = () => {
     return (
-        <div className="bg-black py-10 ">
+        <div className="bg-black md:py-0 py-10 ">
             <div className="relative  text-center  overflow-hidden container mx-auto z-0 ">
                 {/* Background Overlay */}
                 <div className="absolute inset-0 bg-black/70 bg-opacity-50 z-10"></div>
