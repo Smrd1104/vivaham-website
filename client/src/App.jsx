@@ -1,5 +1,5 @@
 // src/App.jsx
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import { useEffect } from "react";
@@ -8,18 +8,13 @@ import 'aos/dist/aos.css';
 import ScrollTop from "./components/ScrollTop";
 
 const App = () => {
-  // const location = useLocation();
-
-  // Initialize AOS once
+  
   useEffect(() => {
     AOS.init({ once: true });
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
   }, []);
-
-  useEffect(() => {
-  if ('scrollRestoration' in window.history) {
-    window.history.scrollRestoration = 'manual';
-  }
-}, []);
 
 
 
