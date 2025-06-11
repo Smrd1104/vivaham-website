@@ -1,19 +1,15 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import bgImage from '../assets/hero/bg-img.jpg'; // adjust path as needed
 import About from '../components/About';
 import Franchise from '../components/Franchise';
 import Studio from '../components/Studio';
 import Stories from '../components/Stories';
-import ExperienceCard from '../components/ExperienceCard';
 import ExperienceSlider from '../components/ExperienceCardSlider';
 import Stores from '../components/Stores';
-import Partner from '../components/Partner';
 import PartnerSection from '../components/PartnerSection';
 import Journey from '../components/Journey';
 import Media from '../components/Media';
 import GiftBox from '../components/GiftBox';
-import { useEffect } from 'react';
 
 const Home = () => {
     
