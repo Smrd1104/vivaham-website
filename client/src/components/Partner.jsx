@@ -15,7 +15,7 @@ const Partner = ({ title, heading, subheading, description, image }) => {
 
                 {/* Foreground Content */}
                 <div className="container mx-auto relative z-0">
-                    <div className="relative z-10 md:h-[600px]  h-[700px] md:p-4 p-2 ">
+                    <div className="relative z-10 lg:h-[600px] md:h-[900px]  h-[700px] lg:p-4 p-3 ">
                         <div className="absolute    p-4 md:p-6 md:bottom-5 bottom-10 bg-stone-100 bg-opacity-95 shadow-lg">
                             <div className="flex flex-col gap-4">
                                 <h1 className="justify-start font-gellix-header-start">{title}</h1>

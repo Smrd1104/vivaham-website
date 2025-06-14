@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 const ExperienceCard = ({ img, title, subtitle, description }) => {
-    const [isMobileOpen, setIsMobileOpen] = useState(false);
+    const [isMobileTabletOpen, setIsMobileTabletOpen] = useState(false);
+
 
     const handleToggle = () => {
-        // Only toggle on mobile
-        if (window.innerWidth < 768) {
-            setIsMobileOpen(!isMobileOpen);
+        // Toggle for screen widths below 1024px (mobile + tablet)
+        if (window.innerWidth < 1024) {
+            setIsMobileTabletOpen(!isMobileTabletOpen);
         }
     };
+
 
     return (
         <div data-aos="fade-up" data-aos-duration="900"
@@ -40,8 +42,8 @@ const ExperienceCard = ({ img, title, subtitle, description }) => {
                     <div
                         className={`
                             overflow-hidden transition-all duration-500 ease-in-out
-                            ${isMobileOpen ? 'max-h-[550px]' : 'max-h-0'}
-                            md:max-h-0 md:group-hover:max-h-[550px]
+                            ${isMobileTabletOpen ? 'max-h-[550px]' : 'max-h-0'}
+                            lg:max-h-0 lg:group-hover:max-h-[550px]
                         `}
                     >
                         <p className="font-gellix-content-start mt-2">

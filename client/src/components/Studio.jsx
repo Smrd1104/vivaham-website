@@ -164,21 +164,21 @@ const Studio = () => {
                     </div>
 
                     {/* Layout */}
-                    <div className="relative flex md:flex-row flex-col gap-5 items-center-safe py-10 ">
+                    <div className="relative flex lg:flex-row flex-col gap-5 items-center-safe py-10 lg:h-[750px] ">
                         {/* Tab Titles */}
                         <div className=" flex flex-col  overflow-hidden md:px-0  z-10">
                             {tabs.map((tab, index) => (
                                 <button
                                     key={index}
                                     onClick={() => scrollToSection(index)}
-                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b md:w-[400px] w-[400px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
+                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b lg:w-[400px] md:w-[700px] w-[400px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
                                         ? "text-zinc-800 font-bold"
                                         : "text-slate-500 font-medium"
                                         }`}
                                 >
                                     {tab.title}
                                     {index === activeTabIndex && (
-                                        <div className="absolute bottom-0 left-0 h-[1px] md:w-[400px] w-[400px] bg-zinc-800"></div>
+                                        <div className="absolute bottom-0 left-0 h-[1px] lg:w-[400px] md:w-[700px] w-[400px] bg-zinc-800"></div>
                                     )}
                                 </button>
                             ))}
@@ -186,7 +186,7 @@ const Studio = () => {
 
                         {/* Tab Content */}
                         <div
-                            className="flex-1 flex flex-col  md:gap-10  overflow-y-auto max-h-[calc(100vh-2rem)]  scroll-hidden scroll-auto snap-y snap-mandatory md:px-0 px-2"
+                            className="flex-1 flex flex-col  md:gap-10  overflow-y-auto lg:max-h-[calc(100vh-2rem)] lg:h-[750px]  scroll-hidden scroll-auto snap-y snap-mandatory md:px-0 px-2"
                             onScroll={handleScroll}
                             ref={scrollRef}
                             tabIndex="0"
@@ -209,7 +209,7 @@ const Studio = () => {
                                     <img
                                         src={tab.image}
                                         alt={tab.title}
-                                        className="w-full md:h-[395px] h-[600px] object-cover rounded"
+                                        className="w-full lg:h-[395px] md:h-[900px] h-[600px] object-cover rounded"
                                         loading="lazy"
                                     />
                                 </section>

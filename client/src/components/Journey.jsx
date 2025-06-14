@@ -67,7 +67,7 @@ const Journey = () => {
                                 src={typeof img === "string" ? img : img.src}
                                 alt={`journey-${i}`}
                                 className="rounded shadow-xl
-                  w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%]
+                  w-[80%] sm:w-[70%] md:w-[70%] lg:w-[50%]
                   h-auto transition-all duration-300"
                             />
                         </div>

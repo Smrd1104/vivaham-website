@@ -84,7 +84,7 @@ const Media = () => {
             </div>
 
             {/* Cards grid */}
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto md:px-14 px-5">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-6 md:gap-10 gap-6 container mx-auto lg:px-14 px-5">
                 {mediaData.map((item, index) => (
                     <MediaCard
                         key={index}

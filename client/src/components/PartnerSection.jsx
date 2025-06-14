@@ -43,7 +43,7 @@ const PartnerSection = () => {
                     Embrace the Fusion of Timeless Indian Heritage and Contemporary Style
                 </p>
 
-                <div className="flex md:flex-row flex-col md:justify-between  gap-5 overflow-hidden md:px-14 px-5">
+                <div className="flex lg:flex-row flex-col md:justify-between  gap-5 overflow-hidden lg:px-14 md:px-2 px-5">
                     {partnerData.map((item, index) => (
                         <Partner
                             key={index}

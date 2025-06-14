@@ -12,12 +12,12 @@ const Stories = () => {
                     style={{ backgroundImage: `url(${stories})` }}
                     loading="lazy"
                 ></div>
-                <div className="    relative w-full   md:min-h-screen min-h-[900px]  h-[650px] overflow-hidden px-10  ">
+                <div className="    relative w-full   lg:min-h-[700px] md:min-h-[1000px] min-h-[700px]  h-[650px] overflow-hidden px-5  ">
 
 
                     {/* Foreground Content */}
-                    <div className="relative z-10  h-full  md:-right-20 ">
-                        <div className="absolute   md:right-0 md:p-10    bg-stone-100 bg-opacity-95 md:max-w-[550px]  p-5 bottom-0 md:bottom-1/10  shadow-lg">
+                    <div className="relative z-10  h-full  lg:-right-20 md:-right-10 ">
+                        <div className="absolute   md:right-0 md:p-5 bg-stone-100 bg-opacity-95 lg:max-w-[550px]  lg:p-10 p-4 bottom-0 md:bottom-1/10  shadow-lg">
                             <div className="flex flex-col gap-4 ">
                                 <div className="font-gellix-header-start-stories">The Stories</div>
                                 <h2 className=" font-cambon-header-stories ">

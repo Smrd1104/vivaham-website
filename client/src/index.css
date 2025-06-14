@@ -140,7 +140,8 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-cambon-header {
-        font-size: 48px;
+        font-size: 52px;
+        line-height: normal;
     }
 }
 
@@ -252,6 +253,23 @@
     text-align: center;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-header {
+        font-size: 34px;
+        text-align: center;
+
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-header {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
 .font-gellix-header-start {
     color: #F6A634;
     font-family: Gellix, sans-serif;
@@ -317,7 +335,7 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-cambon-header-journey {
-        font-size: 34px;
+        font-size: 48px;
     }
 }
 
@@ -344,7 +362,10 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-content {
-        font-size: 72px;
+        font-size: 32px;
+        text-align: justify;
+        line-height: 32px;
+
     }
 }
 
@@ -370,7 +391,9 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-content-p2 {
-        font-size: 72px;
+        font-size: 32px;
+        text-align: justify;
+
     }
 }
 
@@ -398,7 +421,10 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-content-white {
-        font-size: 72px;
+        font-size: 32px;
+        text-align: center;
+        line-height: 28px;
+
     }
 }
 
@@ -425,7 +451,9 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-cambon-header-white-header {
-        font-size: 72px;
+        font-size: 48px;
+        text-align: center;
+        line-height: normal;
     }
 }
 
@@ -480,7 +508,9 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-content-start-studios {
-        font-size: 14px;
+        font-size: 24px;
+        text-align: start;
+        line-height: 2;
     }
 }
 
@@ -569,7 +599,7 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-title-content-h1 {
-        font-size: 72px;
+        font-size: px;
     }
 }
 

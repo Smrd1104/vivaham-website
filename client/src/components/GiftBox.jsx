@@ -15,14 +15,14 @@ const GiftBox = () => {
                 </div>
 
                 {/* Gift Cards */}
-                <div data-aos="fade-up" data-aos-delay="700" className="w-full flex flex-wrap justify-center items-stretch gap-10">
+                <div data-aos="fade-up" data-aos-delay="700" className="w-full flex lg:flex-row flex-col  justify-center items-stretch gap-10">
                     {[1, 2, 3].map((num) => (
                         <article
                             key={num}
-                            className="w-full md:w-[30%] shadow-[-4px_4px_40px_0px_rgba(178,178,178,0.25)] flex flex-col"
+                            className="w-full lg:w-[30%] shadow-[-4px_4px_40px_0px_rgba(178,178,178,0.25)] flex flex-col"
                         >
                             <img
-                                className="w-full h-[400px] object-cover"
+                                className="w-full lg:h-[400px] md:h-[500px] object-cover"
                                 src={giftOne}
                                 alt={`Gift #${num}`}
                             />

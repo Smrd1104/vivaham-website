@@ -66,7 +66,7 @@ const ExperienceSlider = () => {
             ></div>
 
             <div className="container mx-auto relative md:z-0 lg:z-0 z-0">
-                <div className="py-2 md:px-10 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
+                <div className="py-2 lg:px-10 md:px-0 px-5 flex md:flex-row flex-col md:items-center md:justify-between md:gap-0 gap-5">
                     <div className="flex flex-col gap-2 text-start">
                         <h1 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
                             Explore the Vivaham Experience
@@ -91,7 +91,7 @@ const ExperienceSlider = () => {
                     </div>
                 </div>
 
-                <div className="py-10 md:pl-10 md:px-0 px-5">
+                <div className="py-10 lg:pl-10 lg:px-0 md:px-0 px-5">
                     <Swiper
                         onSwiper={setSwiperRef}
                         spaceBetween={15}
@@ -103,7 +103,7 @@ const ExperienceSlider = () => {
                             },
                             // Tablets (640px to 1023px)
                             640: {
-                                slidesPerView: 2,
+                                slidesPerView: 1,
                             },
                             // Desktops (1024px and above)
                             1024: {
@@ -127,7 +127,7 @@ const ExperienceSlider = () => {
                     </Swiper>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 px-10 justify-between pb-5">
+            <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 md:px-16 px-10 justify-between pb-5">
                 <button
                     className="lg:hidden  p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
                     onClick={() => swiperRef?.slidePrev()}
