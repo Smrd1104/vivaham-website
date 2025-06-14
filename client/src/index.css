@@ -295,6 +295,31 @@
     }
 }
 
+.font-gellix-header-start-partner {
+    color: #F6A634;
+    font-family: Gellix, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-header-start-partner {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-header-start-partner {
+        font-size: 20px;
+        text-align: start;
+    }
+}
+
 .font-gellix-header-start-stories {
     color: #F6A634;
     font-family: Gellix, sans-serif;
@@ -494,6 +519,34 @@
     }
 }
 
+.font-gellix-content-start-partner {
+    color: #2A2A2A;
+    text-align: justify;
+    font-family: Gellix, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-content-start-partner {
+        font-size: 32px;
+        text-align: start;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-content-start-partner {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 24px;
+
+    }
+}
+
 .font-gellix-content-start-studios {
     color: #2A2A2A;
     text-align: start;
@@ -527,7 +580,7 @@
 .font-gellix-button {
     color: #FFF;
     font-family: Gellix, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
@@ -537,13 +590,41 @@
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-button {
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
     .font-gellix-button {
+        font-size: 20px;
+        text-align: start;
+
+    }
+}
+
+.font-gellix-button-white {
+    color: black;
+    font-family: Gellix, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    /* 180% */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-button-white {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-button-white {
         font-size: 20px;
         text-align: start;
 
@@ -676,8 +757,23 @@
 .card-cambon-header {
     color: #000;
     font-family: Cambon, serif;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .card-cambon-header {
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .card-cambon-header {
+        font-size: 32px;
+        text-align: start;
+    }
 }

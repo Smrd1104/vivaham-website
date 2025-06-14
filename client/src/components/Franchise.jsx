@@ -22,7 +22,7 @@ const Franchise = () => {
                         </div>
                         <p data-aos="fade-up" data-aos-duration="900" className="  font-gellix-content-p2  ">Be part of an ecosystem where wedding dreams translate into business excellence. The Vivaham franchise model isn’t about joining a brand; it’s about owning a legacy. With multiple revenue streams—from international expos and curated bridal markets to highprofile academies and magazines—we empower you to create your own success story. This is more than a franchise; it’s your gateway to becoming a trendsetter in the global wedding industry</p>
                         <Link to="franchise">
-                            <button data-aos="fade-up" data-aos-duration="900" className="px-6 py-3 bg-zinc-800 inline-flex justify-start items-start gap-2.5">
+                            <button data-aos="fade-up" data-aos-duration="900" className="px-6 py-1 bg-zinc-800 inline-flex justify-start items-start gap-2.5">
                                 <div className="justify-start cursor-pointer  font-gellix-button ">LEARN MORE</div>
                             </button>
                         </Link>

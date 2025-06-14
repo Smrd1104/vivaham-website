@@ -34,10 +34,10 @@ const GiftBox = () => {
                                     </p>
                                 </header>
                                 <div className="mt-4 flex gap-4">
-                                    <button className="px-6 py-3 bg-zinc-800 text-white text-lg font-semibold font-['Gellix'] leading-8">
+                                    <button className="px-6 py-1 bg-zinc-800 text-white text-lg font-semibold font-gellix-button leading-8">
                                         BUY NOW
                                     </button>
-                                    <button className="px-6 py-3 outline outline-1 outline-zinc-800 text-zinc-800 text-lg font-semibold font-['Gellix'] leading-8">
+                                    <button className="px-6 py-0.5 outline outline-1  font-gellix-button-white ">
                                         LEARN MORE
                                     </button>
                                 </div>
@@ -47,7 +47,7 @@ const GiftBox = () => {
                 </div>
 
                 {/* View More Button */}
-                <button className="mt-10 px-6 py-3 bg-zinc-800 text-white text-xl font-semibold font-['Gellix'] leading-9">
+                <button className="mt-10 px-6 py-1 bg-zinc-800 text-white text-xl font-semibold font-gellix-button leading-9">
                     VIEW MORE
                 </button>
             </section>
