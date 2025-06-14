@@ -6,7 +6,7 @@ const FranchiseBlock = ({ title, tagline, description, inventoryTitle, inventory
         <div className='container mx-auto w-full'>
 
 
-            <section className={`relative flex flex-col md:flex-row items-center gap-10 ${reverse ? 'md:flex-row-reverse' : ''}`}>
+            <section className={`relative flex flex-col lg:flex-row items-center gap-10 ${reverse ? 'lg:flex-row-reverse' : ''}`}>
                 <img
                     src={image}
                     alt={title}

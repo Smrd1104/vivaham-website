@@ -29,7 +29,7 @@ const Choose = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:px-10 px-5 py-10">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 md:px-10 px-5 py-10">
                     {cardData.map((text, index) => (
                         <ChooseCard key={index} number={index + 1} text={text} />
                     ))}
