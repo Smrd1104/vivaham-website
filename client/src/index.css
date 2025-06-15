@@ -548,10 +548,9 @@
 }
 
 .font-gellix-content-start-studios {
-    color: #2A2A2A;
     text-align: start;
     font-family: Gellix, sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-style: normal;
     font-weight: 500;
     line-height: 36px;

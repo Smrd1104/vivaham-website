@@ -171,7 +171,7 @@ const Studio = () => {
                                 <button
                                     key={index}
                                     onClick={() => scrollToSection(index)}
-                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b lg:w-[400px] md:w-[700px] w-[400px] cursor-pointer md:text-lg font-gellix-content-start-studios transition-all duration-200 relative ${index === activeTabIndex
+                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b lg:w-[400px] md:w-[700px] w-[400px] cursor-pointer md:text-[18px] font-['gellix'] transition-all duration-200 relative ${index === activeTabIndex
                                         ? "text-zinc-800 font-bold"
                                         : "text-slate-500 font-medium"
                                         }`}
