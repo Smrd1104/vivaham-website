@@ -16,8 +16,8 @@ const Stories = () => {
 
 
                     {/* Foreground Content */}
-                    <div className="relative z-10  h-full  lg:-right-20 md:-right-10 ">
-                        <div className="absolute   md:right-0 md:p-5 bg-stone-100 bg-opacity-95 lg:max-w-[550px]  lg:p-10 p-4 bottom-0 md:bottom-1/10  shadow-lg">
+                    <div className="relative z-10  h-full  lg:-right-5 md:-right-10 ">
+                        <div className="absolute   md:right-0 md:p-5 bg-stone-100 bg-opacity-95 lg:max-w-[550px]  lg:p-8 p-4 bottom-0 md:bottom-1/10  shadow-lg">
                             <div className="flex flex-col gap-4 ">
                                 <div className="font-gellix-header-start-stories">The Stories</div>
                                 <h2 className=" font-cambon-header-stories ">
