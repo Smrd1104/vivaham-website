@@ -159,7 +159,7 @@ const Studio = () => {
                     <div className="flex flex-col items-center gap-4 text-center">
                         <h1 data-aos="fade-up" className="text-orange-400 text-2xl font-medium font-gellix-header">The Studio</h1>
                         <h2 data-aos="fade-up" className="px-1 font-cambon-header">
-                            Lorem ipsum molestie massa sed at nunc.
+                           360° Immersive Wedding Experience "Nurturing your Fairytales"
                         </h2>
                     </div>
 

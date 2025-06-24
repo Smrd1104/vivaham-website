@@ -18,7 +18,7 @@ const PartnerSection = () => {
         },
         {
             id: 2,
-            title: 'Membership Privileges',
+            title: 'Industry Events & Expo Affairs',
             heading: 'A Membership That Redefines Luxury',
             subheading: 'Where tradition meets modernity.',
             description:
