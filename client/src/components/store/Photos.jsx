@@ -9,7 +9,7 @@ const images = [img1, img2, img3, img4];
 
 const Photos = () => {
     return (
-        <div className=' relative '>
+        <div className=' relative md:py-0 py-10 '>
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"

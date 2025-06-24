@@ -2,7 +2,7 @@ import React from 'react';
 
 const SareeCard = ({ image, title, description, discountPrice, actualPrice }) => {
     return (
-        <div data-aos="fade-up" data-aos-delay="900" className='shadow-xl  '>
+        <div data-aos="fade-up" data-aos-delay="900" className='shadow-md '>
             <img className="self-stretch w-full h-[450px]" src={image} alt={title} loading="lazy" />
             <div className='lg:p-4 md:p-5 p-4 bg-white'>
                 <div className='flex flex-col gap-5 '>

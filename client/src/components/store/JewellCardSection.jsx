@@ -16,6 +16,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import JewellCard from './JewellCard';
 
 const mediaData = [
     {
@@ -109,7 +110,7 @@ const JewellCardSection = () => {
                             slidesPerView: 1,
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 1.5,
                         },
                         1024: {
                             slidesPerView: 3.2,
@@ -118,7 +119,7 @@ const JewellCardSection = () => {
                 >
                     {mediaData.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <SareeCard
+                            <JewellCard
                                 image={item.image}
                                 title={item.title}
                                 description={item.description}

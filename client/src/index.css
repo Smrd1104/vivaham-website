@@ -511,10 +511,11 @@
     font-weight: 500;
 
 }
+
 /* Tablet */
 @media (max-width: 1024px) {
     .font-gellix-content-store {
-        font-size: 32px;
+        font-size: 16px;
         text-align: start;
     }
 }
@@ -522,9 +523,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .font-gellix-content-store {
-        font-size: 18px;
+        font-size: 16px;
         text-align: justify;
-        line-height: 1.3;
 
     }
 }

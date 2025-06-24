@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import JewellCard from './JewellCard';
+import SareeCard from './SareeCard';
 
 const mediaData = [
     {
@@ -98,7 +98,7 @@ const SareeCardSection = () => {
 
 
             {/* Swiper Slider */}
-            <div className="relative z-10 container mx-auto pt-14 md:pl-14 md:px-0 px-5 ">
+            <div className="relative z-10 container mx-auto pt-14 lg:pl-14 md:pl-5 pl-5 md:px-0 px-5 ">
                 <Swiper
 
                     onSwiper={setSwiperRef}
@@ -108,7 +108,7 @@ const SareeCardSection = () => {
                             slidesPerView: 1,
                         },
                         768: {
-                            slidesPerView: 2,
+                            slidesPerView: 1.5,
                         },
                         1024: {
                             slidesPerView: 3.2,
@@ -117,7 +117,7 @@ const SareeCardSection = () => {
                 >
                     {mediaData.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <JewellCard
+                            <SareeCard
                                 image={item.image}
                                 title={item.title}
                                 description={item.description}
