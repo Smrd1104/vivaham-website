@@ -8,8 +8,8 @@ const images = [img1, img2, img3, img4];
 
 const Photos = () => {
     return (
-        <div className=''>
-            <div className="grid grid-cols-2 gap-5 justify-center items-center container mx-auto">
+        <div className='pb-10'>
+            <div className="grid md:grid-cols-2 gap-5 justify-center items-center container mx-auto">
                 {images.map((src, index) => (
                     <img
                         key={index}

@@ -373,6 +373,17 @@
     }
 }
 
+.font-gellix-content-bold {
+    color: #2A2A2A;
+    text-align: center;
+    font-family: Gellix, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+
+}
+
 
 .font-gellix-content {
     color: #2A2A2A;

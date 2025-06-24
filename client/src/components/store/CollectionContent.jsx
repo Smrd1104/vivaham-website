@@ -10,12 +10,12 @@ const CollectionContent = () => {
                 style={{ backgroundImage: `url(${bgImage})` }}
                 loading="lazy"
             ></div>
-            <div className="relative z-10 container mx-auto lg:translate-y-28 md:translate-y-2 translate-y-5 lg:my-0 md:my-24  my-10   ">
+            <div className="relative z-10 container mx-auto lg:translate-y-28 md:translate-y-2 translate-y-5 lg:my-0 md:my-24  my-10  px-2  ">
                 <h1 data-aos="fade-up" data-aos-duration="800" className=" font-gellix-header text-center mb-8">
                     Vivaham’s Sarees and Jewellery Collection
                 </h1>
 
-                <div className="flex flex-col items-center justify-center gap-5 lg:px-38 md:px-6 px-5 text-center">
+                <div className="flex flex-col items-center justify-center gap-5 lg:px-38 md:px-6  text-center">
                     <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
                         Where every bride discovers her perfect expression of tradition and style
                     </h2>
@@ -26,7 +26,7 @@ const CollectionContent = () => {
                     <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify  ">
                         From bold hues to delicate pastels, from heirloom-worthy gold to sparkling stones—our collection embraces every aesthetic, every heritage, and every bridal dream.
                     </p>
-                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content  text-justify  ">
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content-bold   text-justify  ">
                         Because on your big day, you deserve to feel authentically you.                    </p>
                 </div>
             </div>
