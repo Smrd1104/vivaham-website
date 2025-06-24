@@ -502,6 +502,33 @@
     }
 }
 
+.font-gellix-content-store {
+    color: #2A2A2A;
+    text-align: start;
+    font-family: Gellix, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-gellix-content-store {
+        font-size: 32px;
+        text-align: start;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-gellix-content-store {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.3;
+
+    }
+}
+
 .font-gellix-content-start {
     color: #2A2A2A;
     text-align: start;
