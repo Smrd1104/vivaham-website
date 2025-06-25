@@ -39,27 +39,27 @@ const plans = [
 
 const Plan = () => {
     return (
-        <div className="w-full max-w-[1720px] mx-auto px-4  relative">
+        <div className="w-full   px-4  relative">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 z-0"
                 style={{ backgroundImage: `url(${bgImage})` }}
                 loading="lazy"
             ></div>
-            <div className="py-5 md:px-14 px-5 flex flex-col gap-5 relative">
+            <div className="py-5 md:px-14 px-5 flex flex-col container mx-auto gap-5 relative">
                 <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header text-center py-5">Choose Your Royal Path</h2>
+                <div data-aos="fade-up" data-aos-duration="900" className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                    {plans.map((plan, index) => (
+                        <PlanCard
+                            key={index}
+                            title={plan.title}
+                            subtitle={plan.subtitle}
+                            features={plan.features}
+                        />
+                    ))}
+                </div>
+            </div>
 
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
-                {plans.map((plan, index) => (
-                    <PlanCard
-                        key={index}
-                        title={plan.title}
-                        subtitle={plan.subtitle}
-                        features={plan.features}
-                    />
-                ))}
-            </div>
         </div>
     );
 };
