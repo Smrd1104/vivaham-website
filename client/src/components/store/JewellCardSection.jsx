@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import img1 from '../../assets/store/saree/saree (1).png';
-import img2 from '../../assets/store/saree/saree (2).png';
-import img3 from '../../assets/store/saree/saree (3).png';
-import img4 from '../../assets/store/saree/saree (4).png';
+import img1 from '../../assets/store/jewell/jewell (1).png';
+import img2 from '../../assets/store/jewell/jewell (2).png';
+import img3 from '../../assets/store/jewell/jewell (3).png';
+import img4 from '../../assets/store/jewell/jewell (4).png';
 
 import bgImage from '../../assets/hero/bg-img.webp';
 import AOS from 'aos';
@@ -23,6 +23,7 @@ const mediaData = [
         image: img1,
         title: 'Mystic Floral Radiance',
         description: 'Diamond Necklace.',
+        release: 'Coming Soon',
         discountPrice: '3,190,000',
         actualPrice: '3,427,000',
     },
@@ -30,6 +31,8 @@ const mediaData = [
         image: img2,
         title: 'Gilded Lakshmi Grace',
         description: 'Gold Necklace.',
+        release: 'Coming Soon',
+
         discountPrice: '709,000',
         actualPrice: '786,000',
     },
@@ -37,6 +40,8 @@ const mediaData = [
         image: img3,
         title: 'Regal Emerald',
         description: 'Diamond Necklace.',
+        release: 'Coming Soon',
+
         discountPrice: '5,710,000',
         actualPrice: '6,427,000',
     },
@@ -44,6 +49,8 @@ const mediaData = [
         image: img4,
         title: 'Lavish Bloom',
         description: 'Diamond Necklace.',
+        release: 'Coming Soon',
+
         discountPrice: '3,190,000',
         actualPrice: '3,427,000',
     },
@@ -100,7 +107,7 @@ const JewellCardSection = () => {
 
 
             {/* Swiper Slider */}
-            <div className="relative z-10 container mx-auto pt-14 md:pl-14 md:px-0 px-5 ">
+            <div className="relative z-10 container mx-auto pt-14 md:pl-5 md:px-0 px-5 ">
                 <Swiper
 
                     onSwiper={setSwiperRef}
@@ -123,8 +130,10 @@ const JewellCardSection = () => {
                                 image={item.image}
                                 title={item.title}
                                 description={item.description}
+                                release={item.release}
                                 discountPrice={item.discountPrice}
                                 actualPrice={item.actualPrice}
+
 
                             />
                         </SwiperSlide>

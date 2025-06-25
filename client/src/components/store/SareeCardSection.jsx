@@ -21,6 +21,7 @@ const mediaData = [
         image: img1,
         title: 'Rani Pink',
         description: 'Zariwork Raw Silk Readymade Lehenga.',
+        release: "Coming Soon",
         discountPrice: '31,992',
         actualPrice: '39,990',
     },
@@ -28,6 +29,7 @@ const mediaData = [
         image: img2,
         title: 'Maroon Zariwork',
         description: 'Velvet Readymade Lehenga.',
+        release: "Coming Soon",
         discountPrice: '31,992',
         actualPrice: '39,990',
     },
@@ -35,6 +37,7 @@ const mediaData = [
         image: img3,
         title: 'Rani Pink',
         description: 'Zariwork Net Saree.',
+        release: "Coming Soon",
         discountPrice: '31,992',
         actualPrice: '39,990',
     },
@@ -42,6 +45,7 @@ const mediaData = [
         image: img4,
         title: 'Red Zariwork',
         description: 'Raw Silk Readymade Lehenga.',
+        release: "Coming Soon",
         discountPrice: '31,992',
         actualPrice: '39,990',
     },
@@ -98,7 +102,7 @@ const SareeCardSection = () => {
 
 
             {/* Swiper Slider */}
-            <div className="relative z-10 container mx-auto pt-14 lg:pl-14 md:pl-5 pl-5 md:px-0 px-5 ">
+            <div className="relative z-10 container mx-auto pt-14 lg:pl-5 md:pl-5 pl-5 md:px-0 px-5 ">
                 <Swiper
 
                     onSwiper={setSwiperRef}
@@ -121,6 +125,7 @@ const SareeCardSection = () => {
                                 image={item.image}
                                 title={item.title}
                                 description={item.description}
+                                release={item.release}
                                 discountPrice={item.discountPrice}
                                 actualPrice={item.actualPrice}
 
