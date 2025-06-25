@@ -12,13 +12,13 @@ import Media from '../components/Media';
 import GiftBox from '../components/GiftBox';
 
 const Home = () => {
-    
+
 
     return (
         <div className="">
 
             {/* Content layer */}
-            <div className="relative z-10">
+            <div className="relative z-10 md:pt-14 ">
                 <Hero />
                 <About />
                 <Franchise />

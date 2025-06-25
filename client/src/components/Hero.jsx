@@ -24,7 +24,7 @@ const Hero = () => {
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col items-center md:translate-y-10 translate-y-62 px-4">
                 {/* Logo */}
-                <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px] lg:h-[400px] h-[300px]" loading="lazy" />
+                <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[700px] lg:h-[350px] h-[300px]" loading="lazy" />
 
                 {/* Heading */}
                 <p data-aos="fade-up" data-aos-duration="900" className=" text-white  font-cambon-hero md:mt-0 mt-5 ">

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollTop from "./components/ScrollTop";
+import Header from "./components/Header";
 
 const App = () => {
   
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <>
       <ScrollTop />
+      <Header/>
       <main className="flex-grow overflow-hidden">
         <ScrollToTopButton />
         <Outlet />
