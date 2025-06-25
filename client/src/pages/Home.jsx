@@ -18,7 +18,7 @@ const Home = () => {
         <div className="">
 
             {/* Content layer */}
-            <div className="relative z-10 md:pt-14 ">
+            <div className="relative z-10  ">
                 <Hero />
                 <About />
                 <Franchise />

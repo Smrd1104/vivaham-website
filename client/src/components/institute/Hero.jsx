@@ -3,7 +3,7 @@ import mobileImg from "../../assets/hero/hero-mobile.jpg"; // portrait image
 import logo from "../../assets/hero/vivaham-logo.png"
 const Hero = () => {
     return (
-        <div className="relative w-full md:h-[720px] h-screen  pt-18">
+        <div className="relative w-full md:h-[720px] h-screen ">
             <div className="absolute inset-0 bg-black/40 bg-opacity-50 z-0"></div>
             {/* Desktop Image */}
             <img

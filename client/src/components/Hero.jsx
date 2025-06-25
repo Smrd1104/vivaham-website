@@ -3,7 +3,7 @@ import mobileImg from "../assets/hero/hero-mobile.jpg"; // portrait image
 import logo from "../assets/hero/vivaham-logo.png"
 const Hero = () => {
     return (
-        <div className="relative w-full md:h-[620px] h-screen">
+        <div className="relative w-full md:h-[720px] h-screen">
             <div className="absolute inset-0 bg-black/40 bg-opacity-50 z-0"></div>
             {/* Desktop Image */}
             <img
@@ -22,7 +22,7 @@ const Hero = () => {
             />
 
             {/* Overlay Content */}
-            <div className="absolute inset-0 flex flex-col items-center md:translate-y-10 translate-y-62 px-4">
+            <div className="absolute inset-0 flex flex-col items-center md:translate-y-24 translate-y-62 px-4">
                 {/* Logo */}
                 <img data-aos="fade-up" data-aos-duration="700" src={logo} alt="Vivaham Logo" className="w-[400px] md:w-[500px] lg:w-[650px] lg:h-[300px] h-[300px]" loading="lazy" />
 
