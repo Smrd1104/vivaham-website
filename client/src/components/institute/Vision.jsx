@@ -36,7 +36,7 @@ const Vision = () => {
 
                     <figure className="w-full lg:w-1/2">
                         <img
-                            className="w-full h-auto object-cover rounded-md"
+                            className="w-full h-[450px] object-cover rounded-md"
                             src={vision}
                             alt="Vision Illustration"
                         />

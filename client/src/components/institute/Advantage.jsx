@@ -1,6 +1,6 @@
 import React from 'react';
 import bgImage from '../../assets/hero/bg-img.webp'; // adjust path as needed
-import ChooseCard from './ChooseCard';
+import AdvantageCard from './AdvantageCard';
 
 const cardData = [
     "Featured in Vivaham Wedding TV and global wedding shows",
@@ -28,7 +28,7 @@ const Advantage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 md:px-10 px-5 py-10">
                     {cardData.map((text, index) => (
-                        <ChooseCard key={index} number={index + 1} text={text} />
+                        <AdvantageCard key={index} number={index + 1} text={text} />
                     ))}
                 </div>
             </div>
