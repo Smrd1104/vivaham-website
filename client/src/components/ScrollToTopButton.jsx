@@ -34,7 +34,7 @@ const ScrollToTopButton = () => {
                 <ArrowUp className="lg:w-5 lg:h-5 md:w-10 md:h-10 w-5 h-5" />
             </button>
             {/* WhatsApp Button */}
-            <a
+            {/* <a
                 href="https://wa.me/919876543210" // Replace with your number
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const ScrollToTopButton = () => {
                 aria-label="Chat on WhatsApp"
             >
                 <FaWhatsapp className="lg:w-5 lg:h-5 md:w-10 md:h-10 w-5 h-5" />
-            </a>
+            </a> */}
 
         </>
     );

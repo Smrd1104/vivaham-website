@@ -10,7 +10,7 @@ const FranchiseBlock = ({ title, tagline, description, inventoryTitle, inventory
                 <img
                     src={image}
                     alt={title}
-                    className="flex-1 h-[550px] object-cover"
+                    className="flex-1 h-[750px] lg:w-1/4  object-cover"
                     loading="lazy" data-aos="fade-right" data-aos-duration="900"
                 />
                 <article className="flex flex-col gap-4 flex-1">

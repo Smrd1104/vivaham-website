@@ -9,11 +9,11 @@ const MediaCard = ({ image, title, description, onPreview }) => {
                     <div className="card-cambon-header">{title}</div>
                     <div className="font-gellix-content-start ">{description}</div>
                 </div>
-                <div className='flex flex-row gap-5 mt-5'>
-                    <button className="px-4 py-1 cursor-pointer bg-zinc-800 text-white text-md font-semibold font-gellix-button">BUY NOW</button>
+                <div className='flex md:flex-row flex-col gap-5 mt-5'>
+                    <button className="px-4 py-1 cursor-pointer bg-zinc-800 text-white text-md font-semibold font-gellix-button">BUY NOW / DOWNLOAD</button>
                     <button
                         onClick={onPreview}
-                        className="px-4 py-1 cursor-pointer outline outline-1 outline-zinc-800 text-zinc-800 text-md font-semibold font-gellix-button-white"
+                        className="px-4 py-1 cursor-pointer outline outline-1  outline-zinc-800 text-zinc-800 text-md font-semibold font-gellix-button-white"
                     >
                         PREVIEW
                     </button>

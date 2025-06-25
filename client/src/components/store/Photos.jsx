@@ -22,7 +22,7 @@ const Photos = () => {
                         key={index}
                         src={src}
                         alt={`Gallery ${index + 1}`}
-                        className="w-full h-[640px] object-fit"
+                        className="w-full  h-full object-cover "
                         loading="lazy"
                     />
                 ))}

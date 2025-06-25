@@ -391,7 +391,7 @@
     font-family: Gellix, sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 36px;
 }
 
@@ -636,7 +636,7 @@
 @media (max-width: 768px) {
     .font-gellix-button {
         font-size: 20px;
-        text-align: start;
+        text-align: center;
 
     }
 }
@@ -663,7 +663,7 @@
 @media (max-width: 768px) {
     .font-gellix-button-white {
         font-size: 20px;
-        text-align: start;
+        text-align: center;
 
     }
 }

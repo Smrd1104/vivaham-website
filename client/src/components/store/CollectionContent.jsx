@@ -15,20 +15,24 @@ const CollectionContent = () => {
                     Vivaham’s Sarees and Jewellery Collection
                 </h1>
 
-                <div className="flex flex-col items-center justify-center gap-5 lg:px-38 md:px-6   text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
+                <div className="flex flex-col items-center justify-center gap-5  text-center">
+                    <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header w-full max-w-5xl mx-auto">
                         Where every bride discovers her perfect expression of tradition and style
                     </h2>
 
-                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify px-5  ">
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify px-5 w-full max-w-[1200px] mx-auto">
                         At Vivaham, we celebrate the individuality of every bride by offering a thoughtfully curated selection of sarees and jewellery that reflect timeless elegance and cultural richness. Whether you're drawn to classic Kanjivarams, contemporary designer drapes, or statement bridal jewelry with intricate craftsmanship, we’re here to guide and inspire you.
                     </p>
-                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify px-5 ">
+
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify px-5 w-full max-w-[1200px] mx-auto">
                         From bold hues to delicate pastels, from heirloom-worthy gold to sparkling stones—our collection embraces every aesthetic, every heritage, and every bridal dream.
                     </p>
-                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content-bold   text-justify px-5 ">
-                        Because on your big day, you deserve to feel authentically you.                    </p>
+
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content-bold text-justify px-5 w-full max-w-[1200px] mx-auto">
+                        Because on your big day, you deserve to feel authentically you.
+                    </p>
                 </div>
+
             </div>
         </div>
     )
