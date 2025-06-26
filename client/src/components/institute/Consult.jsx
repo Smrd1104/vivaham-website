@@ -31,10 +31,10 @@ const Consult = () => {
                 loading="lazy"
             ></div>
             <div className="py-5 md:px-14 px-5 flex flex-col gap-5 relative">
-                <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header text-center py-5">Enrollment and Consultations</h2>
+                <h2 data-aos="fade-up" data-aos-duration="700" className="font-cambon-header text-center py-5">Enrollment and Consultations</h2>
 
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+            <div  data-aos="fade-up" data-aos-duration="700" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
                 {plans.map((plan, index) => (
                     <ConsultCard
                         key={index}

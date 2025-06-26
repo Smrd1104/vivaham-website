@@ -47,8 +47,8 @@ const Plan = () => {
                 loading="lazy"
             ></div>
             <div className="py-5 md:px-14 px-5 flex flex-col container mx-auto gap-5 relative">
-                <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header text-center py-5">Choose Your Royal Path</h2>
-                <div data-aos="fade-up" data-aos-duration="900" className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+                <h2 data-aos="fade-up" data-aos-duration="700" className="font-cambon-header text-center py-5">Choose Your Royal Path</h2>
+                <div data-aos="fade-up" data-aos-duration="700" className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     {plans.map((plan, index) => (
                         <PlanCard
                             key={index}

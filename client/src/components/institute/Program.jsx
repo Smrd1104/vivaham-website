@@ -35,7 +35,7 @@ const Program = () => {
 
             <section className="w-full py-28 max-w-[1720px] mx-auto flex flex-col items-center gap-16">
                 {/* Title */}
-                <header className="w-full text-center">
+                <header data-aos="fade-up" data-aos-duration="700" className="w-full text-center">
                     <h2 className="text-black text-4xl md:text-5xl font-bold font-['Cambon'] leading-tight">
                         Our programs are designed for
                     </h2>
@@ -48,7 +48,7 @@ const Program = () => {
                             key={index}
                             className="flex flex-col items-center gap-6"
                         >
-                            <figure className="w-64 h-64 relative flex justify-center items-center">
+                            <figure data-aos="fade-down" data-aos-duration="700" className="w-64 h-64 relative flex justify-center items-center">
                                 <div className="absolute w-64 h-64 bg-[#FAF6F2] rounded-full" />
                                 <img
                                     src={item.image}
@@ -57,7 +57,7 @@ const Program = () => {
                                 />
                             </figure>
 
-                            <figcaption className="text-center text-zinc-800 text-xl md:text-2xl font-bold font-['Gellix']">
+                            <figcaption data-aos="fade-up" data-aos-duration="700" className="text-center text-zinc-800 text-xl md:text-2xl font-bold font-['Gellix']">
                                 {item.title}
                             </figcaption>
                         </article>

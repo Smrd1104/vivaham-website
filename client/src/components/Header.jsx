@@ -2,16 +2,16 @@ import React, { useState, useRef, useEffect } from "react";
 import { HiX } from "react-icons/hi";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/logo/vivaham-logo.png"
-import bgLogo from "../assets/logo/bg-logo.jpg"
+import logo from "../assets/logo/la-logo.png"
+import bgLogo from "../assets/logo/la-logo.png"
 
 const NAV_LINKS = [
     { name: "Home", href: "/" },
     { name: "The Franchise", href: "/franchise" },
     { name: "The Store", href: "/store" },
     { name: "The Institute", href: "/institute" },
-    { name: "The Gift Box", href: "/gift-Box" },
-    { name: "The Magazine", href: "/magazine" },
+    { name: "The Gift Box", href: "#" },
+    { name: "The Magazine", href: "#" },
 ];
 
 function Header() {
@@ -118,7 +118,7 @@ function Header() {
                 <a href="/">
                     <img
                         src={isScrolled ? bgLogo : logo}
-                        className="md:max-w-[110px] max-w-[100px] w-full object-cover"
+                        className=" h-[68px]  w-full object-cover"
                     />
                 </a>
 
@@ -133,7 +133,7 @@ function Header() {
                                 href={link.href}
                                 onClick={(e) => handleNavigation(link.href, e)}
                                 className={`relative pb-1 ${isActive(link.href)
-                                    ? "after:content-[''] after:absolute after:left-0 after:top-11.5   after:w-full after:h-[4px] after:bg-[#F6A634]"
+                                    ? "after:content-[''] after:absolute after:left-0 after:top-12   after:w-full after:h-[4px] after:bg-[#F6A634]"
                                     : "hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-[#F6A634]/50"
                                     }`}
                             >

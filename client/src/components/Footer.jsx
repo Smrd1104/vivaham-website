@@ -1,6 +1,10 @@
 import React from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { FaInstagram } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -48,6 +52,21 @@ const Footer = () => {
                     <p className="text-white text-md font-medium font-['Gellix']">
                         Follow our newsletter to stay updated about the company.
                     </p>
+
+                    <div className="flex flex-row gap-5 text-white text-[1.5rem]">
+                        <a href="/" target="_blank" rel="noopener noreferrer" className='hover:scale-105  duration-200'>
+                            <FaInstagram />
+                        </a>
+                        <a href="/" target="_blank" rel="noopener noreferrer" className='hover:scale-105  duration-200'>
+                            <FaWhatsapp />
+                        </a>
+                        <a href="/" target="_blank" rel="noopener noreferrer" className='hover:scale-105  duration-200'>
+                            <FaYoutube />
+                        </a>
+                        <a href="/" target="_blank" rel="noopener noreferrer" className='hover:scale-105  duration-200'>
+                            <FaLinkedin />
+                        </a>
+                    </div>
 
                     {/* <form className="flex gap-4">
                         <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 rounded text-black" />

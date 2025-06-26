@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import MediaCard from './MediaCard';
 import Flipbook from './Flipbook';
 import img1 from '../assets/media/media (1).png';
-import img2 from '../assets/media/media (2).png';
-import img3 from '../assets/media/media (3).png';
+import img2 from '../assets/media/media-new.jpg';
+import img3 from '../assets/media/media-new.jpg';
 import bgImage from '../assets/hero/bg-img.webp'; // adjust path as needed
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -14,7 +14,7 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/c546d9effe.html',
+            'https://heyzine.com/flip-book/129447b6af.html',
 
 
         ],
@@ -24,7 +24,7 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/c546d9effe.html',
+            'https://heyzine.com/flip-book/129447b6af.html',
 
         ],
     },
@@ -33,7 +33,7 @@ const mediaData = [
         title: 'Happy Wedding',
         description: 'Lorem ipsum dolor sit amet consectetur.',
         flipbookUrls: [
-            'https://heyzine.com/flip-book/c546d9effe.html',
+            'https://heyzine.com/flip-book/129447b6af.html',
 
 
         ],

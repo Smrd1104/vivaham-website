@@ -15,12 +15,12 @@ const Vision = () => {
                 <section className="flex relative flex-col lg:flex-row items-center gap-10 mx-auto">
                     <article className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-6">
                         <header>
-                            <h1 className="text-zinc-800 text-2xl md:text-4xl font-bold font-['Cambon']">
+                            <h1 data-aos="fade-left" data-aos-duration="700" className="text-zinc-800 text-2xl md:text-4xl font-bold font-['Cambon']">
                                 Our Vision: A New Universe for Wedding Industry Professionals
                             </h1>
                         </header>
 
-                        <section>
+                        <section data-aos="fade-left" data-aos-duration="700">
                             <h2 className="text-zinc-800 text-2xl font-bold font-['Cambon'] mt-4">
                                 Imagine a space where you:
                             </h2>
@@ -35,7 +35,7 @@ const Vision = () => {
                     </article>
 
                     <figure className="w-full lg:w-1/2">
-                        <img
+                        <img data-aos="fade-right" data-aos-duration="700"
                             className="w-full h-[400px] object-cover rounded-md"
                             src={vision}
                             alt="Vision Illustration"
