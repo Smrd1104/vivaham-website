@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { HiX } from "react-icons/hi";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { useLocation, useNavigate } from "react-router-dom";
+import logo from "../assets/logo/vivaham-logo.png"
+import bgLogo from "../assets/logo/bg-logo.jpg"
 
 const NAV_LINKS = [
     { name: "Home", href: "/" },
@@ -111,12 +113,13 @@ function Header() {
                 md:px-10`}
             role="navigation"
         >
-            <div className="flex justify-between items-center py-4 px-2 mx-auto max-w-7xl">
+            <div className="flex justify-between items-center py-2 md:px-2 px-10 mx-auto max-w-7xl">
                 {/* Logo */}
                 <a href="/">
-                    <h1 className="text-zinc-800 md:text-[1.8rem] text-[1.5rem] font-bold font-['Cambon']">
-                        Vivaham Luxury Expo
-                    </h1>
+                    <img
+                        src={isScrolled ? bgLogo : logo}
+                        className="md:max-w-[110px] max-w-[100px] w-full object-cover"
+                    />
                 </a>
 
                 {/* Desktop Nav */}
@@ -130,7 +133,7 @@ function Header() {
                                 href={link.href}
                                 onClick={(e) => handleNavigation(link.href, e)}
                                 className={`relative pb-1 ${isActive(link.href)
-                                    ? "after:content-[''] after:absolute after:left-0 after:top-11 after:py-0.5 after:w-full after:h-[2px] after:bg-[#F6A634]"
+                                    ? "after:content-[''] after:absolute after:left-0 after:top-11.5   after:w-full after:h-[4px] after:bg-[#F6A634]"
                                     : "hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-[#F6A634]/50"
                                     }`}
                             >
@@ -148,9 +151,9 @@ function Header() {
                     aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
                 >
                     {isMenuOpen ? (
-                        <HiX size={30} color="black" />
+                        <HiX size={0} color="white" />
                     ) : (
-                        <BiMenuAltLeft size={30} color="black" />
+                        <BiMenuAltLeft size={40} color="black" />
                     )}
                 </button>
             </div>
