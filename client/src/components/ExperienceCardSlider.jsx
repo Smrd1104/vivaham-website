@@ -15,6 +15,7 @@ import img2 from '../assets/exp/exp (5).jpg';
 import img3 from '../assets/exp/exp (3).jpg';
 import img4 from '../assets/exp/exp (4).jpg';
 import img5 from '../assets/exp/exp (2).jpg';
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 
 const experienceData = [
     {
@@ -80,13 +81,13 @@ const ExperienceSlider = () => {
                             className="lg:block hidden p-4  border border-gray-300 hover:bg-gray-100 transition cursor-pointer"
                             onClick={() => swiperRef?.slidePrev()}
                         >
-                            <BiLeftArrowAlt className="text-[1.5rem]" />
+                            <GoArrowLeft className="text-[1.5rem] text-slate-600" />
                         </button>
                         <button
                             className="lg:block hidden p-4  border border-gray-300 hover:bg-gray-100 transition cursor-pointer"
                             onClick={() => swiperRef?.slideNext()}
                         >
-                            <BiRightArrowAlt className="text-[1.5rem]" />
+                            <GoArrowRight className="text-[1.5rem] text-slate-600" />
                         </button>
                     </div>
                 </div>
@@ -132,13 +133,13 @@ const ExperienceSlider = () => {
                     className="lg:hidden  p-4  border border-gray-300 hover:bg-gray-100 transition"
                     onClick={() => swiperRef?.slidePrev()}
                 >
-                    <BiLeftArrowAlt className="text-[1.5rem]" />
+                    <GoArrowLeft className="text-[1.5rem] text-slate-600" />
                 </button>
                 <button
                     className="lg:hidden  p-4 border border-gray-300 hover:bg-gray-100 transition"
                     onClick={() => swiperRef?.slideNext()}
                 >
-                    <BiRightArrowAlt className="text-[1.5rem]" />
+                    <GoArrowRight className="text-[1.5rem] text-slate-600" />
                 </button>
             </div>
         </div >

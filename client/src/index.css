@@ -153,6 +153,8 @@
     }
 }
 
+
+
 .font-cambon-header-studio {
     color: #2A2A2A;
     font-family: Cambon, serif;
@@ -160,6 +162,23 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .font-cambon-header-studio {
+        font-size: 36px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .font-cambon-header-studio {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1;
+
+    }
 }
 
 

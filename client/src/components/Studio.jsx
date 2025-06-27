@@ -93,7 +93,7 @@ const Studio = () => {
             scrollTimeout.current = setTimeout(() => {
                 setIsScrolling(false);
                 setActiveTabIndex(index);
-            }, 800);
+            }, 500);
         }
     };
 
@@ -159,7 +159,7 @@ const Studio = () => {
                     <div className="flex flex-col items-center gap-4 text-center">
                         <h1 data-aos="fade-up" className="text-orange-400 text-2xl font-medium font-gellix-header">The Studio</h1>
                         <h2 data-aos="fade-up" className="px-1 font-cambon-header">
-                           360° Immersive Wedding Experience "Nurturing your Fairytales"
+                            360° Immersive Wedding Experience "Nurturing your Fairytales"
                         </h2>
                     </div>
 
@@ -171,14 +171,14 @@ const Studio = () => {
                                 <button
                                     key={index}
                                     onClick={() => scrollToSection(index)}
-                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b lg:w-[400px] md:w-[700px] w-[400px] cursor-pointer md:text-[18px] font-['gellix'] transition-all duration-200 relative ${index === activeTabIndex
+                                    className={`md:px-4 px-5 md:py-6 py-3 text-left border-b lg:w-[400px] md:w-[700px] w-[400px]  cursor-pointer md:text-[18px] font-['gellix'] transition-all duration-200 relative ${index === activeTabIndex
                                         ? "text-zinc-800 font-bold"
                                         : "text-slate-500 font-medium"
                                         }`}
                                 >
                                     {tab.title}
                                     {index === activeTabIndex && (
-                                        <div className="absolute bottom-0 left-0 h-[1px] lg:w-[400px] md:w-[700px] w-[400px] bg-zinc-800"></div>
+                                        <div className="absolute bottom-0 left-0 h-[1px] lg:w-[400px] md:w-[700px] w-[400px]  bg-zinc-800"></div>
                                     )}
                                 </button>
                             ))}
@@ -195,14 +195,14 @@ const Studio = () => {
                                 <section
                                     key={index}
                                     ref={(el) => (sectionRefs.current[index] = el)}
-                                    className="min-h-[calc(100vh-1rem)] md:py-12 flex flex-col gap-5 justify-center snap-start"
+                                    className="min-h-[calc(100vh-1rem)] md:py-12 py-5 flex flex-col gap-5 justify-center snap-start"
                                     id={`section-${index}`}
                                 >
                                     <div>
                                         <h3 className=" font-cambon-header-studio">
                                             {tab.title}
                                         </h3>
-                                        <p className=" font-gellix-content-start   mt-4">
+                                        <p className=" font-gellix-content-start   mt-4 md:px-0  px-3">
                                             {tab.content}
                                         </p>
                                     </div>
