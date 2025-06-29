@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MediaCard = ({ image, title, description, onPreview }) => {
     return (
@@ -21,12 +22,14 @@ const MediaCard = ({ image, title, description, onPreview }) => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                    <button className="w-full sm:w-auto px-5 py-2 bg-zinc-800 text-white font-semibold font-gellix-button text-sm rounded">
-                        BUY NOW / DOWNLOAD
-                    </button>
+                    <Link to="https://wa.link/dsu7l5" target="_blank">
+                        <button className="w-full sm:w-auto px-5 py-2 bg-zinc-800 text-white font-semibold font-gellix-button text-sm  cursor-pointer">
+                            BUY NOW / DOWNLOAD
+                        </button>
+                    </Link>
                     <button
                         onClick={onPreview}
-                        className="w-full sm:w-auto px-5 py-2 border border-zinc-800 text-zinc-800 font-semibold font-gellix-button-white text-sm rounded"
+                        className="w-full sm:w-auto px-5 py-2 border border-zinc-800 text-zinc-800 font-semibold font-gellix-button-white text-sm  cursor-pointer"
                     >
                         PREVIEW
                     </button>
