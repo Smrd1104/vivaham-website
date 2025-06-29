@@ -17,12 +17,12 @@ const About = () => {
                     About Us
                 </h1>
 
-                <div className="flex flex-col items-center justify-center gap-5 lg:px-38 md:px-6 px-5 text-center">
-                    <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header">
+                <div className="flex flex-col items-center justify-center gap-5   lg:px-0 px-5 md:px-5 text-center">
+                    <h2 data-aos="fade-up" data-aos-duration="900" className="font-cambon-header  w-full max-w-[1000px] mx-auto">
                         Luxury, Tradition And Innovation - All in One Grand Experience
                     </h2>
 
-                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content text-justify  ">
+                    <p data-aos="fade-up" data-aos-duration="1000" className="font-gellix-content  w-full max-w-[1150px] mx-auto  ">
                         Vivaham Luxury Expo Pvt Ltd is not just a name, it’s a movement that redefines the grandeur of Indian weddings.
                         We go beyond mere planning and bring together innovation, culture, and luxury under one roof. Whether it’s crafting
                         dreamlike bridal experiences, curating industry-defining conventions, or connecting the finest brands with their

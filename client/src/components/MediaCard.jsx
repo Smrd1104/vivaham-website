@@ -2,18 +2,31 @@ import React from 'react';
 
 const MediaCard = ({ image, title, description, onPreview }) => {
     return (
-        <div data-aos="fade-up" data-aos-delay="900" className='shadow'>
-            <img className="self-stretch w-full lg:h-[351px]" src={image} alt={title} loading="lazy" />
-            <div className='lg:p-4 md:p-10 p-4'>
-                <div className='flex flex-col gap-5 mt-5'>
-                    <div className="card-cambon-header">{title}</div>
-                    <div className="font-gellix-content-start ">{description}</div>
+        <div
+            data-aos="fade-up"
+            data-aos-delay="900"
+            className="w-full lg:max-w-md mx-auto bg-white shadow-sm overflow-hidden"
+        >
+            <img
+                src={image}
+                alt={title}
+                loading="lazy"
+                className="w-full h-100 md:h-180 lg:h-96 object-fit"
+            />
+
+            <div className="p-6 flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                    <h3 className="card-cambon-header text-lg font-semibold">{title}</h3>
+                    <p className="font-gellix-content-start text-sm text-gray-700">{description}</p>
                 </div>
-                <div className='flex md:flex-row flex-col gap-5 mt-5'>
-                    <button className="px-4 py-1 cursor-pointer bg-zinc-800 text-white text-md font-semibold font-gellix-button">BUY NOW / DOWNLOAD</button>
+
+                <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                    <button className="w-full sm:w-auto px-5 py-2 bg-zinc-800 text-white font-semibold font-gellix-button text-sm rounded">
+                        BUY NOW / DOWNLOAD
+                    </button>
                     <button
                         onClick={onPreview}
-                        className="px-4 py-1 cursor-pointer outline outline-1  outline-zinc-800 text-zinc-800 text-md font-semibold font-gellix-button-white"
+                        className="w-full sm:w-auto px-5 py-2 border border-zinc-800 text-zinc-800 font-semibold font-gellix-button-white text-sm rounded"
                     >
                         PREVIEW
                     </button>

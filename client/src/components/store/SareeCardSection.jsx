@@ -134,6 +134,20 @@ const SareeCardSection = () => {
                     ))}
                 </Swiper>
             </div>
+            <div data-aos="fade-up" data-aos-duration="900" className="flex flex-row gap-2 md:px-16 px-10 justify-between  mt-5">
+                <button
+                    className="lg:hidden  p-4  border border-gray-300 hover:bg-gray-100 transition"
+                    onClick={() => swiperRef?.slidePrev()}
+                >
+                    <GoArrowLeft className="text-[1.5rem] text-slate-600" />
+                </button>
+                <button
+                    className="lg:hidden  p-4 border border-gray-300 hover:bg-gray-100 transition"
+                    onClick={() => swiperRef?.slideNext()}
+                >
+                    <GoArrowRight className="text-[1.5rem] text-slate-600" />
+                </button>
+            </div>
         </div>
     );
 };

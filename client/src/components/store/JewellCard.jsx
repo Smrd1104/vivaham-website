@@ -33,7 +33,7 @@ const JewellCard = ({ image, title, description, release, discountPrice, actualP
                     </div> */}
                 </div>
 
-                <div className="flex gap-4 mt-5">
+                <div className="flex md:flex-row flex-col  gap-4 mt-5">
                     <button className="px-4 py-1 bg-zinc-800 text-white font-semibold font-gellix-button">BUY NOW</button>
                     <button className="px-4 py-1 border border-zinc-800 text-zinc-800 font-semibold font-gellix-button-white">
                         Learn More

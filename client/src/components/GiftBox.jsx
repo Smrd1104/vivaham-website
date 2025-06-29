@@ -33,7 +33,7 @@ const GiftBox = () => {
                                         Lorem ipsum dolor sit amet consectetur. Vitae nunc cursus cursus nisl arcu pretium aenean.
                                     </p>
                                 </header>
-                                <div className="mt-4 flex gap-4">
+                                <div className="mt-4 flex md:flex-row flex-col gap-4">
                                     <button className="px-6 py-1 bg-zinc-800 text-white text-lg font-semibold font-gellix-button leading-8">
                                         BUY NOW
                                     </button>

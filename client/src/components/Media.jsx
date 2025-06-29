@@ -9,16 +9,16 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 const mediaData = [
-    {
-        image: img1,
-        title: 'Happy Wedding',
-        description: 'Lorem ipsum dolor sit amet consectetur.',
-        flipbookUrls: [
-            'https://heyzine.com/flip-book/129447b6af.html',
+    // {
+    //     image: img1,
+    //     title: 'Happy Wedding',
+    //     description: 'Lorem ipsum dolor sit amet consectetur.',
+    //     flipbookUrls: [
+    //         'https://heyzine.com/flip-book/129447b6af.html',
 
 
-        ],
-    },
+    //     ],
+    // },
     {
         image: img2,
         title: 'Happy Wedding',
@@ -84,7 +84,7 @@ const Media = () => {
             </div>
 
             {/* Cards grid */}
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 lg:gap-6 md:gap-10 gap-6 container mx-auto lg:px-14 px-5">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:gap-0 md:gap-10 gap-6 container mx-auto lg:px-32 px-5">
                 {mediaData.map((item, index) => (
                     <MediaCard
                         key={index}
